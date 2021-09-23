@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
-    <script type="text/javascript" src="https://api.map.baidu.com/api?v=2.0&&type=webgl&ak=Xao2Glw8hp7usD8GGw8xNMC2ZaahAIuF"></script>
+    <script type="text/javascript" src="https://api.map.baidu.com/api?v=2.0&&ak=Xao2Glw8hp7usD8GGw8xNMC2ZaahAIuF"></script>
     <title>正欣德招聘官网</title>
     <link rel="stylesheet" href="./index/css/index.css">
     <link rel="stylesheet" href="./css/animate.css">
@@ -187,18 +187,11 @@
 <script src="./js/jquery-1.11.3.min.js"></script>
 <script src="./js/global.js"></script>
 <script data-instruction="baiduMap">    
-    var map = new BMapGL.Map("map-content");
-    // 定位
-    var point = new BMapGL.Point(104.0742, 30.6217);
-    // 层级
-    map.centerAndZoom(point, 19);
-    // 地图伸缩
-    map.enableScrollWheelZoom(true);
-
-    // 用经纬度设置地图中心点
-    var new_point = new BMapGL.Point(104.07442,30.6218);
-    var marker = new BMapGL.Marker(new_point);  // 创建标注
-    map.addOverlay(marker);              // 将标注添加到地图中
-    marker.setAnimation(BMapGL_ANIMATION_BOUNCE); //跳动的动画
-    
+    // 百度地图API功能
+	var map = new BMap.Map("map-content");
+	var point = new BMap.Point(104.07442, 30.6218);     // 设置中心点
+	map.centerAndZoom(point, 19);
+	var marker = new BMap.Marker(point);  // 创建标注
+	map.addOverlay(marker);               // 将标注添加到地图中
+	marker.setAnimation(BMAP_ANIMATION_BOUNCE); //跳动的动画
 </script>
