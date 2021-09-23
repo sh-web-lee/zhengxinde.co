@@ -1,0 +1,132 @@
+.box {
+    background: #FAFAFA 0% 0% no-repeat padding-box;
+}
+.detail {
+    margin-top: 70px;
+    background: transparent url('../images/detail-bg.png') 0% 0% no-repeat padding-box;
+    padding: 6vh 0 80px;
+}
+.detail-content {
+    background-color: #fff;
+    padding: 4.05vh 2.56vw 10vh 3.5vw;
+    border-radius: 5px;
+    border: 1px solid #EEF0F2;
+}
+.detail-content .detail-content-post-name {
+    padding-bottom: 33.5px;
+    border-bottom: 1px solid #EEF0F2;
+}
+.detail-content .detail-content-post-name-p1 {
+    display: flex;
+    justify-content: space-between;
+}
+.detail-content .detail-content-post-name-p1 span {
+    display: inline-block;
+    width: 180px;
+    height: 30px;
+    background: #F5F6F7 0% 0% no-repeat padding-box;
+    border-radius: 100px;
+    font: normal normal normal 14px/30px JiangChengYuanTi400;
+    letter-spacing: 0px;
+    color: #333333;
+    text-align: center;
+}
+.detail-content .detail-content-post-name-p1 span i {
+    font-style: normal;
+}
+.detail-content .detail-content-post-name-p1 a {
+    display: inline-block;
+    border: 1px solid #000000;
+    border-radius: 4px;
+    width: 124px;
+    height: 42px;
+    font: normal normal normal 14px/42px JiangChengYuanTi400;
+    letter-spacing: 0px;
+    color: #000000;
+    text-align: center;
+}
+
+.detail-content .detail-content-post-name-p2 {
+    font: normal normal normal 24px/32px JiangChengYuanTi500;
+    letter-spacing: 0px;
+    margin-top: 3px;
+}
+.detail-content .detail-content-post-name-p3 {
+    font: normal normal normal 14px/18px JiangChengYuanTi500;
+    letter-spacing: 0px;
+    color: #333333;
+    display: flex;
+}
+.detail-content .detail-content-post-name-p3 dl {
+    display: flex;
+    margin-right: 40px;
+    margin-top: 15px;
+    position: relative;
+}
+.detail-content .detail-content-post-name-p3 dl:not(:last-child)::after {
+    content: "";
+    position: absolute;
+    right: -20px;
+    top: 4px;
+    width: 1px;
+    height: 10px;
+    background-color: #cccccc;
+}
+
+.detail .detail-content-post-duty {
+    padding: 33.5px 0 32.5px;
+    border-bottom: 1px solid #EEF0F2;
+}
+.detail .detail-content-post-duty h1, .detail-content-post-demand h1 {
+    font: normal normal normal 16px/21px JiangChengYuanTi500;
+    letter-spacing: 0px;
+    color: #000000;
+    margin-bottom: 16px;
+}
+.detail .detail-content-post-duty ol li, .detail-content-post-demand ol li {
+    font: normal normal normal 16px/18px JiangChengYuanTi400;
+    letter-spacing: 0px;
+    color: #666666;
+    margin-bottom: 18px;
+}
+.detail-content-post-demand {
+    padding-top: 33.5px;
+}
+.detail .send-resume {
+    display: block;
+    max-width: 260px;
+    height: 56px;
+    background: transparent linear-gradient(90deg, #EFAF23 0%, #FFC013 100%) 0% 0% no-repeat padding-box;
+    border-radius: 6px;
+    color: #fff;
+    font: normal normal normal 18px/56px JiangChengYuanTi500;
+    letter-spacing: 0px;
+    text-align: center;
+    margin: 50px auto 0;
+}
+.detail .send-resume:hover {
+    background: #FFC013;
+}
+
+
+
+@media (max-width:768px) {
+    .detail-content .detail-content-post-name-p1 a {
+        width: 100px;
+        height: 38px;
+        line-height: 38px;
+        font-size: 12px;
+    }
+    .detail-content .detail-content-post-name-p2 {
+        font-size: 20px;
+    }
+    .detail-content .detail-content-post-name-p3 {
+        flex-direction: column;
+    }
+    .detail-content .detail-content-post-name-p3 dl:not(:last-child)::after {
+        background-color: #fff;
+    }
+    .detail .detail-content-post-duty ol li, .detail-content-post-demand ol li {
+        font-size: 14px;
+    }
+}

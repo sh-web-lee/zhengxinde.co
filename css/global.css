@@ -1,0 +1,319 @@
+/* header */
+.header {
+    position: fixed;
+    left: 0;
+    z-index: 999;
+    width: 100%;
+    height: 70px;
+    background-color: #fff;
+    top: 0px;
+    line-height: 70px;
+}
+.header .logo-box {
+    margin-left: 60px;
+}
+.header .header-content {
+    display: flex;
+    justify-content: space-between;
+}
+.header .header-content .logo-box a {
+    font: normal normal normal 20px/26px JiangChengYuanTi500;
+    color: #000;
+}
+.header-nav {
+    display: flex;
+    margin-right: 54px;
+}
+.header-nav span {
+    cursor: pointer;
+}
+.header-nav li {
+    position: relative;
+}
+.header-nav li span {
+    padding: 0 2.29vw;
+    font: normal normal normal 18px/24px JiangChengYuanTi500;
+    color: #000;
+}
+.header-nav span:hover {
+    color: #1D77E6;
+    text-align: center;
+}
+.header-nav .active .dropmenu {
+    display: block;
+    animation: drop-menu .5s;
+    position: absolute;
+}
+.header-nav .active span {
+    color: #1D77E6;
+}
+.header-nav li .dropmenu {
+    display: none;
+    box-shadow: 2px 3px 18px #D0DEEBCC;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border-radius: 10px;
+    padding: 14px 9px;
+}
+.header-nav li .dropmenu dl {
+    height: 42px;
+    line-height: 48px;
+    padding-right: 1.197vw;
+}
+.header-nav li .dropmenu dl:hover {
+    background: #F0F0F0 0% 0% no-repeat padding-box;
+    border-radius: 8px;
+    cursor: pointer;
+}
+.header-nav li .dropmenu dl dt {
+    position: relative;
+}
+.header-nav li .dropmenu dl dt::before {
+    content: "";
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: #FFC233;
+    align-items: center;
+    top: 20px;
+    left: 26px;
+}
+.header-nav li .dropmenu dl dd {
+    padding-left: 46px;
+}
+.header-nav li .dropmenu dl dd a {
+    font: normal normal normal 18px/24px JiangChengYuanTi500;
+    letter-spacing: 0px;
+    color: #555555;
+}
+
+.container {
+    max-width: 1200px;
+    position: relative;
+    margin: 0 auto;
+}
+
+/* footer */
+.footer {
+    height: 361px;
+    width: 100%;
+    background: #fff;
+    overflow: hidden;
+}
+.footer .container {
+    overflow: hidden;
+}
+.footer-content {
+    width: 705px;
+    margin: 52px auto 0;
+    display: flex;
+    justify-content: space-between;
+}
+.footer-content dl {
+    padding-left: 71.5px;
+    position: relative;
+}
+.footer-content dl:nth-child(1) {
+    padding-left: 0;
+}
+.footer-content dl:nth-child(2) {
+    padding-right: 58.5px;
+}
+.footer-content dl:nth-child(1)::after, .footer-content dl:nth-child(2)::after{
+    content: "";
+    background: #E0E0E0;
+    width: 2px;
+    height: 200px;
+    position: absolute;
+    top: 0;
+    right: 0;
+
+}
+.footer-content h1 {
+    font: normal normal normal 24px/32px JiangChengYuanTi500;
+    letter-spacing: 1.92px;
+    color: #3A3E3E;
+    padding: 4.5vw 2.37vw 5.15vw 0;
+}
+.footer-content dt {
+    font: normal normal normal 16px/21px JiangChengYuanTi500;
+    letter-spacing: 0px;
+    color: #333333;
+    margin-bottom: 15px;
+}
+.footer-content dd {
+    font: normal normal normal 16px/21px JiangChengYuanTi400;
+    letter-spacing: 0px;
+    color: #888888;
+}
+.footer-content dd p span {
+    margin-top: 7px;
+    display: inline-block;
+}
+.footer-content .qq-contact {
+    margin-top: 46px;
+}
+.footer-content .footer-focus {
+    margin-top: 25px;
+}
+.footer-content .wechat-box {
+    padding-left: 18px;
+}
+.footer-law {
+    border-top: 2px solid #f9f9f9;
+    margin-top: 35px;
+    text-align: center;
+    padding-top: 22px;
+}
+.footer-law p {
+    font: normal normal normal 13px/17px JiangChengYuanTi;
+    color: #888888;
+}
+.active-icon {
+    display: none;
+}
+.showFloat {
+    position: relative;
+}
+.showFloat:hover .wechat-code {
+    display: block;
+}
+.wechat-code {
+    width: 102px;
+    height: 80px;
+    background: url(../images/code-box.png) no-repeat -13px -8px;
+    position: absolute;
+    top: 4px;
+    left: 65px;
+    display: none;
+    animation: showCode .5s;
+}
+.wechat-code img {
+    display: inline-block;
+    width: 100%;
+    transform: scale(0.7);
+    position: absolute;
+    top: -14%;
+    left: 6%;
+}
+.mob {
+    display: none !important;
+}
+@media (max-width:768px) {
+    .box {
+        padding: 0 2vw;
+    }
+    .header .logo-box {
+        margin-left: 6vw;
+    }
+    .header-nav {
+        margin-right: 2vw;
+    }
+    .header .header-content .logo-box a {
+        font-size: 4vw;
+        color: #000;
+    }
+    .header-nav li span {
+        font-size: 14px;
+    }
+    .header-nav .active .dropmenu {
+        width: 95px;
+        left: -49px;
+    }
+    .header-nav .active .mob_dropmenu {
+        left: -2vw;
+    }
+    .header-nav li .dropmenu dl dd a {
+        font-size: 14px;
+    }
+    .header-nav li .dropmenu dl dd {
+        padding-left: 29px;
+    }
+    .header-nav li .dropmenu dl dt::before {
+        left: 7px;
+    }
+    .footer {
+        height: auto;
+    }
+    .footer-content {
+        flex-direction: column;
+        margin-top: 0;
+    }
+    .footer-content h1 {
+        padding: 0;
+    }
+    .footer-content dl {
+        padding-left: 2vw;
+        margin-top: 5vh;
+    }
+    .footer-content dl:nth-child(1)::after, .footer-content dl:nth-child(2)::after {
+        position: relative;
+    }
+    .footer-law {
+        padding-bottom: 157px;
+    }
+}
+@media (max-width:375px) {
+    .footer-law {
+        padding-bottom: 14px;
+    }
+    .mob {
+        display: block !important;
+    }
+    .pc {
+        display: none !important;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 字体文件 */
+@font-face {
+    font-family: JiangChengYuanTiBold;
+    src: url(./Helvetica\ Rounded\ LT\ Bold.ttf);
+}
+@font-face {
+    font-family: JiangChengYuanTi;
+    src: url(./Helvetica\ Rounded\ LT\ Black.ttf);
+}
+@font-face {
+    font-family: JiangChengYuanTi;
+    src: url(./Helvetica\ Rounded\ LT\ Bold\ Oblique.ttf);
+}
+@font-face {
+    font-family: JiangChengYuanTi200;
+    src: url(./JiangChengYuanTi\ 200W.ttf);
+}
+@font-face {
+    font-family: JiangChengYuanTi300;
+    src: url(./JiangChengYuanTi\ 300W.ttf);
+}
+@font-face {
+    font-family: JiangChengYuanTi400;
+    src: url(./JiangChengYuanTi\ 400W.ttf);
+}
+@font-face {
+    font-family: JiangChengYuanTi500;
+    src: url(./JiangChengYuanTi\ 500W.ttf);
+}
+@font-face {
+    font-family: JiangChengYuanTi600;
+    src: url(./JiangChengYuanTi\ 600W.ttf);
+}
+@font-face {
+    font-family: JiangChengYuanTi700;
+    src: url(./JiangChengYuanTi\ 700W.ttf);
+}

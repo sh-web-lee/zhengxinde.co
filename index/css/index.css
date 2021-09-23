@@ -1,0 +1,343 @@
+.home-banner {
+    margin: 70px auto 0;
+    background: url(../images/banner-bg.png) no-repeat center 0;
+    border-radius: 20px 20px 0 0;
+    text-align: center;
+}
+.home-banner .container {
+    padding-top: 106px;
+    margin-bottom: 2px;
+}
+.home-banner img {
+    max-width: 100%;
+    display: inline-block;
+}
+.home-vision {
+    margin-top: 45px;
+    background: url(../images/vision-bg.png) no-repeat center 365px;
+}
+.home-vision .container {
+    height: 100%;
+    background: url(../images/vision-main.png) no-repeat center 1px;
+    padding-bottom: 235px;
+}
+.home-vision-head {
+    padding-top: 14px;
+}
+.home-vision-title {
+    font: normal normal normal 52px/69px JiangChengYuanTi500;
+    letter-spacing: 0px;
+    color: #000000;
+    text-align: center;
+    font-weight: 500;
+    line-height: 69px;
+}
+.home-vision-subtitle {
+    font: normal normal normal 28px/37px JiangChengYuanTi500;
+    letter-spacing: 0px;
+    color: #333333;
+    text-align: center;
+    margin-top: 20px;
+    line-height: 37px;
+    margin-bottom: 10px;
+}
+.home-vision-subtitle em {
+    font-style: normal;
+}
+.home-vision-subtitle span {
+    font: normal normal bold 20px/23px JiangChengYuanTiBold;
+    letter-spacing: 0px;
+    color: #999999;
+}
+.home-vision-main {
+    display: flex;
+    justify-content: space-between;
+    width: 81%;
+    margin: 19% auto 0;
+}
+.home-vision-item {
+    color: #fff;
+    position: relative;
+    width: 50%;
+}
+.home-vision-item:nth-child(1)::after {
+    content: "";
+    background-color: #fff;
+    width: 1px;
+    height: 100%;
+    top: 0;
+    right: -4px;
+    position: absolute;
+}
+.home-vision-item:nth-child(2) {
+    text-align: right;
+}
+.home-vision-item-title {
+    font: normal normal normal 44px/58px JiangChengYuanTi500;
+    letter-spacing: 0.88px;
+    color: #FFFFFF;
+}
+.home-vision-item-title span {
+    font: normal normal bold 26px/31px JiangChengYuanTiBold;
+    letter-spacing: 0;
+    margin-left: 16px;
+    color: #FFFFFF;
+}
+.home-vision-item-content {
+    font: normal normal normal 28px/37px JiangChengYuanTi500;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    margin-top: 47px;
+}
+.home-vision-item-content span {
+    opacity: .6;
+    font: normal normal bold 22px/26px JiangChengYuanTiBold;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+}
+.home-business {
+    margin-top: 151px;
+}
+.home-business .container {
+    text-align: center;
+}
+.home-business-title {
+    font: normal normal normal 52px/69px JiangChengYuanTi500;
+    letter-spacing: 0px;
+    color: #000000;
+}
+.home-business-title::after {
+    content: "";
+    position: absolute;
+    background-image: url(../images/business-title.png);
+    width: 108px;
+    height: 40px;
+    top: 13px;
+    right: 18vw;
+}
+.home-business-items {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 42px;
+}
+.home-business-items .home-business-item {
+    width: 32%;
+    padding: 78px 20px 83px;
+    transition: all 0.3s;
+}
+.home-business-items .home-business-item dd {
+    margin-top: 60px;
+}
+.home-business-items .home-business-item dd h3 {
+    font: normal normal normal 26px/34px JiangChengYuanTi400;
+    letter-spacing: 0px;
+    color: #000000;
+}
+.home-business-items .home-business-item dd p {
+    font: normal normal normal 16px/30px JiangChengYuanTi500;
+    letter-spacing: -0.24px;
+    color: #9A9A9A;
+    margin-top: 22px;
+}
+.home-business-items .home-business-item:hover {
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 5px 30px #00000014;
+    border-radius: 10px;
+}
+.home-contact {
+    margin-top: 91px;
+    padding-bottom: 73px;
+    position: relative;
+}
+.home-contact::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 48vh;
+    background: #f9f9f9;
+    top: 384px;
+    z-index: -1;
+}
+.home-contact .home-contact-title {
+    text-align: center;
+    font: normal normal normal 52px/69px JiangChengYuanTi500;
+    letter-spacing: 0px;
+    color: #000000;
+}
+.home-contact-content {
+    margin-top: 60px;
+}
+.home-contact-map {
+    height: 480px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 12px 40px #0000001A;
+    border-radius: 30px;
+    padding: 9px 8px 8px 9px;
+}
+.home-contact-apply .home-btn-apply {
+    background: transparent linear-gradient(90deg, #EFAF23 0%, #FFC013 100%) 0% 0% no-repeat padding-box;
+    border-radius: 6px;
+    display: block;
+    width: 380px;
+    /* width: 32%; */
+    height: 64px;
+    color: #fff;
+    font: normal normal normal 20px/26px JiangChengYuanTi500;
+    letter-spacing: 0px;
+    text-align: center;
+    line-height: 64px;
+    margin: 73px auto 0;
+    /* transition: all .3s; */
+}
+.home-contact-apply .home-btn-apply:hover {
+    background: #FFC013;
+}
+
+
+
+@media (max-width: 768px) {
+    .home-business-items {
+        flex-direction: column;
+    }
+    .home-vision-title {
+        font-size: 36px;
+    }
+    .home-vision-subtitle {
+        font-size: 20px;
+    }
+    .home-vision-subtitle span {
+        font: normal normal bold 14px JiangChengYuanTiBold;
+    }
+    .home-vision-main {
+        margin: 17% auto 0;
+        width: 100%;
+    }
+    .home-vision-item-content {
+        margin-top: 13px;
+        font-size: 20px;
+    }
+    .home-vision-item:nth-child(2) {
+        text-align: left;
+    }
+    .home-vision-item-title {
+        font-size: 32px;
+        line-height: 36px;
+    }
+    .home-vision-item-title span {
+        font-size: 28px;
+    }
+    .home-vision-item-content span {
+        font-size: 16px;
+    }
+    .home-vision-item {
+        /* width: 100%; */
+        padding-left: 50px;
+    }
+    .home-business {
+        margin-top: 50px;
+    }
+    .home-business-title {
+        font-size: 40px;
+    }
+    .home-business-items .home-business-item {
+        width: 100%;
+        padding: 20px 0;
+        margin: 10px 0;
+    }
+    .home-contact-apply .home-btn-apply {
+        width: 200px;
+        font-size: 18px;
+        height: 52px;
+        line-height: 52px;
+        margin-top: 6vh;
+    }
+    .home-contact .home-contact-title {
+        font-size: 40px;
+    }
+    .home-contact-content {
+        margin-top: 6vh;
+    }
+    .home-contact-map {
+        /* padding: 0; */
+        height: 51vh;
+    }
+    .home-business-items .home-business-item dd p {
+        font-size: 14px;
+    }
+    .home-business-title::after {
+        right: 16vw;
+    }
+    .home-vision-head {
+        padding: 0;
+    }
+    .home-vision .container {
+        background-position: center 58px;
+        background-size: 100%;
+    }
+    .home-vision-item:nth-child(1) .home-vision-item-content {
+        margin-top: 50px;
+    }
+}
+@media (max-width: 375px) {
+    .home-business-title::after {
+        right: 1vw;
+    }
+    .home-business-title {
+        text-align: left;
+        text-indent: 29px;
+    }
+    .home-vision .container {
+        background-position: center 58px;
+        background: url(../images/vision-main-mob.png) no-repeat center 276px;
+        background-size: 100%;
+        padding-bottom: 41px;
+    }
+    .home-vision-subtitle {
+        padding: 0 2vw;
+    }
+    .home-vision-subtitle em {
+        display: inline-block;
+    }
+    .home-vision-item-title {
+        font-size: 32px;
+    }
+    .home-vision-item-title span {
+        font-size: 20px;
+    }
+    .home-vision-main {
+        margin: 0;
+        flex-direction: column;
+        padding: 88px 0 0px 37px;
+        width: 84%;
+    }
+    .home-vision-item-content {
+        position: relative;
+        font-size: 20px;
+    }
+    .home-vision-item-content span {
+        font-size: 16px;
+    }
+    .home-vision-item:nth-child(1) .home-vision-item-content::after {
+        content: "";
+        background-color: #fff;
+        position: absolute;
+        width: 78vw;
+        height: 1px;
+        top: 104px;
+        left: -50%;
+        transform: translateX(50%);
+    }
+    .home-vision-item:nth-child(2) {
+        margin-top: 80px;
+    }
+    .home-vision-item:nth-child(1)::after {
+        position: relative;
+    }
+    .home-vision-item {
+        padding-left: 0;
+        width: 100%;
+    }
+    .home-vision-item:nth-child(1) .home-vision-item-content {
+        margin-top: 19px;
+    }
+}

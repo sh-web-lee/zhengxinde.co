@@ -1,0 +1,199 @@
+.box {
+    background: #FAFAFA 0% 0% no-repeat padding-box;
+}
+.submit-resume {
+    margin-top: 70px;
+    background: transparent url('../images/detail-bg.png') 0% 0% no-repeat padding-box;
+    padding: 6vh 0 8.5vh;
+}
+.submit-resume-content {
+    background-color: #fff;
+    padding: 4.05vh 2.56vw 10vh 3.5vw;
+    border-radius: 5px;
+    border: 1px solid #EEF0F2;
+}
+.submit-resume-content .submit-resume-content-post-name {
+    padding-bottom: 33.5px;
+    border-bottom: 1px solid #EEF0F2;
+    padding-left: 20px;
+}
+.submit-resume-content .submit-resume-content-post-name-p1 {
+    display: flex;
+    justify-content: space-between;
+}
+.submit-resume-content .submit-resume-content-post-name-p1 span {
+    display: inline-block;
+    width: 180px;
+    height: 30px;
+    background: #F5F6F7 0% 0% no-repeat padding-box;
+    border-radius: 100px;
+    font: normal normal normal 14px/30px JiangChengYuanTi400;
+    letter-spacing: 0px;
+    color: #333;
+    text-align: center;
+}
+.submit-resume-content .submit-resume-content-post-name-p1 span i {
+    font-style: normal;
+}
+.submit-resume-content .submit-resume-content-post-name-p1 a {
+    display: inline-block;
+    border: 1px solid #000000;
+    border-radius: 4px;
+    width: 124px;
+    height: 42px;
+    font: normal normal normal 14px/42px JiangChengYuanTi400;
+    letter-spacing: 0px;
+    color: #000;
+    text-align: center;
+}
+
+.submit-resume-content .submit-resume-content-post-name-p2 {
+    font: normal normal normal 24px/32px JiangChengYuanTi500;
+    letter-spacing: 0px;
+    color: #000000;
+    margin-top: 3px;
+}
+.submit-resume-content .submit-resume-content-post-name-p3 {
+    font: normal normal normal 14px/18px JiangChengYuanTi500;
+    letter-spacing: 0px;
+    color: #333333;
+    display: flex;
+}
+.submit-resume-content .submit-resume-content-post-name-p3 dl {
+    display: flex;
+    margin-right: 40px;
+    margin-top: 15px;
+    position: relative;
+}
+.submit-resume-content .submit-resume-content-post-name-p3 dl:not(:last-child)::after {
+    content: "";
+    position: absolute;
+    right: -20px;
+    top: 4px;
+    width: 1px;
+    height: 10px;
+    background-color: #cccccc;
+}
+.submit-resume-content-mes {
+    padding-top: 32.5px;
+    display: flex;
+    padding-left: 20px;
+}
+.submit-resume-content-mes label, .upload-resume label, .note label {
+    display: block;
+    font: normal normal normal 16px JiangChengYuanTi400;
+    letter-spacing: 0px;
+    color: #000000;
+}
+.submit-resume-content-mes input {
+    padding-left: 10px;
+    width: 240px;
+    height: 36px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border: 1px solid #CCCCCC;
+    border-radius: 4px;
+    font: normal normal normal 14px/18px JiangChengYuanTi500;
+    letter-spacing: 0px;
+    color: #333333;
+    margin-top: 8px;
+}
+.submit-resume-content-mes .mes-mail {
+    margin-left: 74px;
+}
+.upload-resume {
+    padding-left: 20px;
+    padding-top: 31px;
+    border-bottom: 1px solid #EEf0f2;
+    padding-bottom: 33.5px;
+}
+.upload-resume a {
+    display: inline-block;
+    margin-top: 8px;
+    margin-bottom: 11px;
+    font: normal normal normal 14px/32px JiangChengYuanTi400;
+    text-align: center;
+    letter-spacing: 0px;
+    color: #000000;
+    width: 96px;
+    height: 32px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border: 1px solid #CCCCCC;
+    border-radius: 4px;
+}
+.upload-resume i {
+    font-style: normal;
+    font: normal normal normal 14px/18px JiangChengYuanTi400;
+    letter-spacing: 0px;
+    color: #888888;
+    margin-left: 14px;
+}
+.upload-resume p {
+    font: normal normal normal 14px/18px JiangChengYuanTi400;
+    letter-spacing: 0px;
+    color: #FF6E5A;
+}
+.note {
+    padding-left: 20px;
+    padding-top: 32.5px;
+}
+.note textarea {
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border: 1px solid #CCCCCC;
+    border-radius: 2px;
+    /* width: 1064px; */
+    width: 97%;
+    height: 160px;
+    margin-top: 8px;
+    font: normal normal normal 14px/18px JiangChengYuanTi;
+    letter-spacing: 0px;
+    color: #333333;
+}
+
+
+
+
+
+.submit-resume .btn-submit-resume {
+    display: block;
+    max-width: 260px;
+    height: 56px;
+    background: transparent linear-gradient(90deg, #EFAF23 0%, #FFC013 100%) 0% 0% no-repeat padding-box;
+    border-radius: 6px;
+    color: #fff;
+    font: normal normal normal 18px/56px JiangChengYuanTi500;
+    letter-spacing: 0px;
+    text-align: center;
+    margin: 50px auto 0;
+}
+.submit-resume .btn-submit-resume:hover {
+    background: #FFC013;
+}
+
+@media (max-width:768px) {
+    .submit-resume-content .submit-resume-content-post-name-p1 a {
+        width: 100px;
+        height: 38px;
+        line-height: 38px;
+        font-size: 12px;
+    }
+    .submit-resume-content .submit-resume-content-post-name-p2 {
+        font-size: 20px;
+    }
+    .submit-resume-content .submit-resume-content-post-name-p3 {
+        flex-direction: column;
+    }
+    .submit-resume-content .submit-resume-content-post-name-p3 dl:not(:last-child)::after {
+        background-color: #fff;
+    }
+}
+
+
+
+@media (max-width: 375px) {
+    .submit-resume-content-mes {
+        flex-direction: column;
+    }
+    .submit-resume-content-mes .mes-mail {
+        margin: 0;
+    }
+}

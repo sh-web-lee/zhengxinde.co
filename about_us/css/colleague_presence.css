@@ -1,0 +1,193 @@
+.box {
+    background: transparent linear-gradient(180deg, #FAFAFA 0%, #FFFFFF 100%) 0% 0% no-repeat padding-box;
+}
+.colleague-banner {
+    margin-top: 70px;
+    min-height: 780px;
+    background: url(../images/colleague-bg.png) no-repeat center 0;
+    overflow: hidden;
+}
+.colleague-banner .container {
+    padding-bottom: 10.56vh;
+    max-width: 73vw;
+}
+.colleague-banner h1 {
+    margin-top: 10.03vh;
+    font: normal normal normal 50px/66px JiangChengYuanTi500;
+    letter-spacing: 0px;
+    color: #000000;
+    text-align: center;
+}
+.colleague-banner .colleague-banner-content {
+    margin-top: 42px;
+    background: transparent linear-gradient(0deg, #FFFFFF 0%, #FFFFFF 100%) 0% 0% no-repeat padding-box;
+    box-shadow: 0px 0px 40px #00000012;
+    height: 574px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-around;
+    padding-top: 106px;
+}
+.colleague-banner .colleague-banner-content dl {
+    height: 46vh;
+    overflow: hidden;
+    box-shadow: 0px 5px 40px rgba(0, 0, 0, 0.2);
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+.colleague-banner .colleague-banner-content dl:hover {
+    transform: translateY(-20px);
+    transition: all .3s;
+}
+.colleague-banner .colleague-banner-content dl:hover dd {
+    transform: translateY(-180px);
+    transition: all .3s;
+}
+.colleague-banner .colleague-banner-content dl dd {
+    padding: 19px 0.99vw 27px 16px;
+    padding: 2.02vh 0.99vw 2.88vh 0.83vw;
+    position: relative;
+    background-color: #fff;
+} 
+.colleague-banner .colleague-banner-content dl img {
+    display: inline-block;
+    width: 100%;
+}
+.colleague-banner .colleague-banner-content dl dd>div {
+    display: flex;
+    justify-content: space-between;
+}
+.colleague-banner .colleague-banner-content dl dd::before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 4px;
+    left: 0;
+    top: -3px;
+    background: transparent linear-gradient(90deg, #FF9544 0%, #FFBA44 100%) 0% 0% no-repeat padding-box;
+}
+.colleague-banner .colleague-banner-content dl dd span {
+    font: normal normal normal 16px/21px JiangChengYuanTi400;
+    letter-spacing: 0px;
+    color: #666666;
+}
+.colleague-banner .colleague-banner-content dl dd i {
+    font: normal normal bold 18px/21px JiangChengYuanTi700;
+    letter-spacing: 0px;
+    color: #555555;
+}
+.colleague-banner .colleague-banner-content dl dd p {
+    font: normal normal normal 14px/25px JiangChengYuanTi500;
+    letter-spacing: 0px;
+    color: #555555;
+    margin-top: 21px;
+}
+.photo-wall {
+    background: transparent linear-gradient(180deg, #FAFAFA 0%, #FFFFFF 100%) 0% 0% no-repeat padding-box;
+    border-bottom: 1px solid #E0E0E0;
+    padding-bottom: 11.09vh;
+}
+.photo-wall-headline {
+    font: normal normal normal 50px/66px JiangChengYuanTi500;
+    letter-spacing: 0px;
+    color: #000000;
+    text-align: center;
+    margin-bottom: 48px;
+}
+.photo-wall .photo-wall-content1, .photo-wall-content2, .photo-wall-content3 {
+    display: flex;
+    justify-content: space-between;
+}
+.photo-wall .photo-wall-content1 .photo-wall-content1-photo2, .photo-wall-content2 .photo-wall-content2-photo2, .photo-wall-content3 .photo-wall-content2-photo2 {
+    position: relative;
+    margin: 0 18px;
+}
+.photo-wall .photo-wall-content1 .photo-wall-content1-photo2::after {
+    content: '公司环境';
+    position: absolute;
+    color: #fff;
+    font: normal normal normal 36px/48px JiangChengYuanTi500;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    top: 200px;
+    right: 98px;
+}
+.photo-wall .photo-wall-content2 .photo-wall-content2-photo1, .photo-wall-content3 .photo-wall-content3-photo3 {
+    position: relative;
+}
+.photo-wall .photo-wall-content2 .photo-wall-content2-photo1::after {
+    content: '快乐工作';
+    position: absolute;
+    font: normal normal normal 36px/48px JiangChengYuanTi500;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    top: 200px;
+    right: 98px;
+}
+.photo-wall .photo-wall-content3 .photo-wall-content3-photo3::after {
+    content: 'On the way';
+    position: absolute;
+    font: normal normal normal 36px/48px JiangChengYuanTi500;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    top: 200px;
+    right: 98px;
+}
+.photo-wall .photo-wall-content2 {
+    margin-top: 6.93vh;
+    margin-bottom: 6.7vh;
+}
+
+
+
+
+
+
+@media (max-width:768px) {
+    .colleague-banner .colleague-banner-content {
+        flex-direction: column;
+        padding: 6vh 6vw;
+        height: auto;
+    }
+    .colleague-banner h1 {
+        font-size: 36px;
+    }
+    .colleague-banner .colleague-banner-content dl {
+        margin: 0 auto 15px;
+        height: 44vh;
+    }
+    .colleague-banner .colleague-banner-content dl dd p {
+        padding-left: 15px;
+    }
+    .photo-wall-content img {
+        display: inline-block;
+        width: 100%;
+    }
+    .photo-wall-headline {
+        font-size: 36px;
+    }
+    .photo-wall-headline {
+        margin-bottom: 26px;
+    }
+}
+
+@media (max-width:375px) {
+    .colleague-banner h1 {
+        font-size: 32px;
+    }
+    .colleague-banner .container {
+        max-width: 90%;
+    }
+    .colleague-banner .colleague-banner-content dl {
+        height: 61vh;
+    }
+    .colleague-banner .colleague-banner-content dl dd p {
+        font-size: 12px;
+    }
+    .colleague-banner .colleague-banner-content dl dd {
+        height: 160px;
+    }
+    .photo-wall-headline {
+        font-size: 32px;
+    }
+}

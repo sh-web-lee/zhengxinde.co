@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>兼职招聘</title>
+    <link rel="stylesheet" href="../css/animate.css">
+    <link rel="stylesheet" href="../css/global.css">
+    <link rel="stylesheet" href="../css/reset.css">
+</head>
+<body>
+    <div class="box">
+        <section class="header">
+            <div class="container">
+                <div class="header-content">
+                    <div class="logo-box">
+                        <a class="logo" href="../index/index.html">成都正欣德</a>
+                    </div>
+                    <ul class="header-nav">
+                        <li>
+                            <span>岗位招聘</span>
+                            <div class="dropmenu mob_dropmenu">
+                                <dl>
+                                    <dt></dt>
+                                    <dd><a href="../recruitment/social_recriutment.html">社会招聘</a></dd>
+                                </dl>
+                                <dl>
+                                    <dt></dt>
+                                    <dd><a href="../recruitment/Internship_recruitment.html">实习招聘</a></dd>
+                                </dl>
+                                <dl>
+                                    <dt></dt>
+                                    <dd><a href="../recruitment/part-time_recruitment.html">兼职招聘</a></dd>
+                                </dl>
+                            </div>
+                        </li>
+                        <li>
+                            <span>关于我们</span>
+                            <div class="dropmenu">
+                                <dl>
+                                    <dt></dt>
+                                    <dd><a href="../about_us/introduct.html">公司简介</a></dd>
+                                </dl>
+                                <dl>
+                                    <dt></dt>
+                                    <dd><a href="../about_us/salary_welfare.html">薪酬福利</a></dd>
+                                </dl>
+                                <dl>
+                                    <dt></dt>
+                                    <dd><a href="../about_us/train_development.html">培训发展</a></dd>
+                                </dl>
+                                <dl>
+                                    <dt></dt>
+                                    <dd><a href="../about_us/colleague_presence.html">同事风采</a></dd>
+                                </dl>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- footer -->
+        <section class="footer">
+            <!-- <div class="container"> -->
+                <div class="footer-content">
+                    <dl>
+                        <h1>成都正欣德</h1>
+                    </dl>
+                    <dl>
+                        <dt>联系方式</dt>
+                        <dd>
+                            <p class="mail-contact">邮箱</br><span>@iobit.com</span></p>
+                            <p class="qq-contact">HR QQ</br><span>1762163144</span></p>
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt class="footer-add">联络地址</dt>
+                        <dd>
+                            <p>公司地址<br><span>成都市人民南路四段新希望大厦<br>(桐梓林地铁站旁)</span></p>
+                        </dd>
+                        <div class="showFloat">
+                            <dt class="footer-focus">关注我们</dt>
+                            <dd class="wechat-box">
+                                <img class="wechat default-icon" src="../images/wechat-contact.png" alt="">
+                                <img class="wechat active-icon" src="../images/wechat-hover.png" alt="">
+                            </dd>
+                            <div class="wechat-code">
+                                <img src="../images/wechat.jpg" alt="">
+                            </div>
+                        </div>
+                    </dl>
+                </div>
+                <div class="footer-law">
+                    <p>常年法律顾问 福建亚太天正律师事务所 徐超 律师</p>
+                </div>
+            <!-- </div> -->
+        </section>
+    </div>
+</body>
+</html>
+<script src="../js/jquery-1.11.3.min.js"></script>
+<script data-instruction="post-nav">
+    $('.recriut-nav li').click(function() {
+        $(this).addClass('active')
+        $(this).siblings().removeClass('active')
+    })
+</script>
+<script data-instruction="showCode">
+    $(function(){
+        $('.showFloat').mouseover(function(e) {
+            $('.default-icon').hide()
+            $('.active-icon').show()
+        })
+        $('.showFloat').mouseleave(function() {
+            $('.default-icon').show()
+            $('.active-icon').hide()
+        })
+    })
+    </script>
+<script data-instruction="dropMenu">
+    $('.header-nav li span').click(function() {
+        $(this).parent().hasClass('active') ? $(this).parent().removeClass('active') : $(this).parent().addClass('active')
+        $(this).parent().siblings().removeClass('active')
+    })
+</script>
