@@ -32,7 +32,7 @@ const handleScrollAnimation = () => {
     if (elementInView(el)) {
       displayScrollElement(el);
     } else if (elementOutofView(el)) {
-      hideScrollElement(el);
+      // hideScrollElement(el);     // 取消 页面上滑退出动画效果
     }
   });
 };

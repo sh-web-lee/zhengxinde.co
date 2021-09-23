@@ -20,6 +20,16 @@
         opacity: 1;
     }
 }
+
+/* 首页地图定位点闪动 */
+@keyframes jump_point {
+    0% {
+        top: 0;
+    }
+    100% {
+        top: 10px;
+    }
+}
 /* 滚动至当前屏幕出现动画 */
 .fadeInUp {
     /* transition-property: all; */
@@ -58,6 +68,10 @@
 }
 .load .fadeIn-point3 {
     opacity: 0.4;
+}
+
+.BMap_Marker {
+    transition: jump_point 1s;
 }
 
 
