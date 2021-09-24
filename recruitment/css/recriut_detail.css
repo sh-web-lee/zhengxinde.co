@@ -129,4 +129,7 @@
     .detail .detail-content-post-duty ol li, .detail-content-post-demand ol li {
         font-size: 14px;
     }
+    .detail {
+        padding: 6vh 2vw 80px;
+    }
 }

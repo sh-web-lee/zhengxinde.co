@@ -30,6 +30,7 @@
 }
 .colleague-banner .colleague-banner-content dl {
     height: 435px;
+    width: 302px;
     overflow: hidden;
     box-shadow: 0px 5px 40px rgba(0, 0, 0, 0.2);
     border-top-left-radius: 20px;
@@ -40,11 +41,11 @@
     transition: all .5s;
 }
 .colleague-banner .colleague-banner-content dl:hover dd {
-    transform: translateY(-180px);
+    transform: translateY(-77%);
     transition: all .5s;
 }
 .colleague-banner .colleague-banner-content dl dd {
-    padding: 2.02vh 0.99vw 2.88vh 0.83vw;
+    padding: 12px 12px 2.88vh;
     position: relative;
     background-color: #fff;
 } 
@@ -152,8 +153,9 @@
         font-size: 36px;
     }
     .colleague-banner .colleague-banner-content dl {
-        margin: 0 auto 15px;
-        height: 406px;
+        margin: 0 auto 35px;
+        height: 400px;
+        width: 274px;
     }
     .colleague-banner .colleague-banner-content dl dd p {
         padding-left: 15px;
@@ -168,22 +170,10 @@
     .photo-wall-headline {
         margin-bottom: 26px;
     }
-}
-
-@media (max-width:375px) {
-    .colleague-banner h1 {
-        font-size: 32px;
-    }
     .colleague-banner .container {
-        max-width: 90%;
+        width: 90% !important;
     }
-    .colleague-banner .colleague-banner-content dl dd p {
-        font-size: 12px;
-    }
-    .colleague-banner .colleague-banner-content dl dd {
-        height: 160px;
-    }
-    .photo-wall-headline {
-        font-size: 32px;
+    .colleague-banner .colleague-banner-content dl:hover dd {
+        padding: 12px;
     }
 }

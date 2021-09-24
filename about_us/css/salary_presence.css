@@ -4,10 +4,10 @@
 .salary-banner {
     margin-top: 70px;
     padding-top: 108.5px;
-    background: url(../images/salary-banner-bg.svg) no-repeat 37px 264px;
+    background: url(../images/salary-banner-bg.svg) no-repeat -24px 264px;
 }
 .salary-banner .container {
-    max-width: 1064px;
+    width: 1064px;
     padding-bottom: 99px;
 }
 .salary-title {
@@ -23,80 +23,55 @@
     position: absolute;
 }
 .salary-banner .salary-banner-icons .banner-icon01 {
-    /* right: -59px; */
-    right: -3.1vw;
-    /* top: 90px; */
-    top: 9.6vh;
+    top: 90px;
+    left: 824px;
 }
 .salary-banner .salary-banner-icons .banner-icon02 {
-    /* left: 344px; */
-    left: 17.94vw;
-    /* top: 140px; */
-    top: 14.8vh;
+    left: 344px;
+    top: 140px;
 }
 .salary-banner .salary-banner-icons .banner-icon03 {
-    /* right: 231px;
-    bottom: -34px; */
-    right: 12.05vw;
-    bottom: -3.63vh;
+    left: 522px;
+    top: 264px;
 }
 .salary-banner .salary-banner-icons .banner-icon04 {
-    /* top: 112px;
-    right: 163px; */
-    top: 9vh;
-    right: 8.45vw;
+    top: 112px;
+    left: 628px;
 }
 .salary-banner .salary-banner-icons .banner-icon05 {
-    /* top: 6px;
-    left: 101px; */
-    top: 0.64vh;
-    left: 5.27vw;
+    top: 6px;
+    left: 101px;
 }
 .salary-banner .salary-banner-icons .banner-icon06 {
-    /* bottom: -3px;
-    left: 162px; */
-    bottom: -0.4vh;
-    left: 8.45vw;
+    left: 162px;
+    top: 265px;
 }
 .salary-banner .salary-banner-icons .banner-icon07 {
-    /* top: 8px;
-    right: 314px; */
-    top: 0.92vh;
-    right: 16.375vw;
+    top: 8px;
+    left: 508px;
 }
 .salary-banner .salary-banner-icons .banner-icon08 {
-    /* bottom: 32px;
-    right: 82px; */
-    right: 4.2vw;
-    bottom: 3.31vh;
+    top: 266px;
+    left: 740px;
 }
 .salary-banner .salary-banner-icons .banner-icon09 {
-    /* left: 364px;
-    bottom: -68px; */
-    left: 19vw;
-    bottom: -7.25vh;
+    left: 364px;
+    top: 366px;
 }
 .salary-banner .salary-banner-icons .banner-icon10 {
-    /* top: 19px;
-    left: 346px; */
-    top: 2.03vh;
-    left: 18.04vw;
+    top: 19px;
+    left: 346px;
 }
 .salary-banner .salary-banner-icons .banner-icon11 {
-    /* top: 203px; */
-    top: 21.5vh;
+    top: 203px;
 }
 .salary-banner .salary-banner-icons .banner-icon12 {
-    /* top: 97px;
-    left: -29px; */
-    top: 10.34vh;
-    left: -1.51vw;
+    top: 97px;
+    left: -29px;
 }
 .salary-banner .salary-banner-icons .banner-icon13 {
-    /* right: 88px;
-    top: -25px; */
-    right: 4.58vw;
-    top: -2.57vh;
+    top: -25px;
+    left: 810px;
 }
 .salary-banner .salary-banner-icons i {
     position: absolute;
@@ -112,25 +87,23 @@
     background: #45DEC0 0% 0% no-repeat padding-box;
     right: 310px;
     top: 69px;
-    /* opacity: 0.4; */
+    left: 740px;
 }
 .salary-banner .salary-banner-icons .point2 {
     width: 14px;
     height: 14px;
     background: #FB9062 0% 0% no-repeat padding-box;
-    /* opacity: 0.2; */
     border-radius: 50%;
-    bottom: 75px;
     left: 185px;
+    top: 449px;
 }
 .salary-banner .salary-banner-icons .point3 {
     width: 12px;
     height: 12px;
     background: #E0BBDB 0% 0% no-repeat padding-box;
-    /* opacity: 0.4; */
     border-radius: 50%;
-    bottom: 60px;
-    right: 252px;
+    left: 798px;
+    top: 466px;
 }
 .salary-structure .salary-structure-title {
     font: normal normal normal 48px/63px JiangChengYuanTi500;
@@ -313,6 +286,12 @@
     }
     .salary-banner .salary-banner-icons img {
         position: relative;
+    }
+    .salary-structure {
+        padding: 0 4vw;
+    }
+    .salary-welfare {
+        padding: 281px 2vw 0;
     }
 }
 

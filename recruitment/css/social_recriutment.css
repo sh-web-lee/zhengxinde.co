@@ -185,6 +185,9 @@
 
 
 @media (max-width:768px) {
+    .recriut-banner {
+        padding: 0 2vw;
+    }
     .recriut-nav li {
         width: 100px;
         height: 45px;
@@ -196,7 +199,7 @@
         padding: 29.5vh 0 31.2vh;
     }
     .recriut-post {
-        padding-bottom: 28px;
+        padding: 36px 2vw 28px;
     }
     .recriut-post .recriut-post-search .recriut-post-search-box {
         padding: 4vh 6vw;

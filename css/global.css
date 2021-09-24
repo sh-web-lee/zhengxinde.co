@@ -4,7 +4,6 @@
     left: 0;
     z-index: 999;
     width: 100%;
-    height: 70px;
     background-color: #fff;
     top: 0px;
     line-height: 70px;
@@ -31,7 +30,7 @@
     position: relative;
 }
 .header-nav li span {
-    padding: 0 2.29vw;
+    padding: 0 44px;
     font: normal normal normal 18px/24px JiangChengYuanTi500;
     color: #000;
 }
@@ -95,13 +94,13 @@
 
 /* footer */
 .footer {
-    height: 361px;
     width: 100%;
     background: #fff;
     overflow: hidden;
 }
 .footer .container {
     overflow: hidden;
+    width: 100%;
 }
 .footer-content {
     width: 705px;
@@ -163,10 +162,9 @@
     border-top: 2px solid #f9f9f9;
     margin-top: 35px;
     text-align: center;
-    padding-top: 22px;
 }
 .footer-law p {
-    font: normal normal normal 13px/17px JiangChengYuanTi;
+    font: normal normal normal 13px/57px JiangChengYuanTi;
     color: #888888;
 }
 .active-icon {
@@ -200,9 +198,6 @@
     display: none !important;
 }
 @media (max-width:768px) {
-    .box {
-        padding: 0 2vw;
-    }
     .header .logo-box {
         margin-left: 6vw;
     }
@@ -214,14 +209,15 @@
         color: #000;
     }
     .header-nav li span {
-        font-size: 14px;
+        font-size: 16px;
+        padding: 0 8px;
     }
     .header-nav .active .dropmenu {
         width: 95px;
-        left: -49px;
+        left: -33px;
     }
     .header-nav .active .mob_dropmenu {
-        left: -2vw;
+        left: 0;
     }
     .header-nav li .dropmenu dl dd a {
         font-size: 14px;
@@ -241,10 +237,10 @@
         width: auto;
     }
     .footer-content h1 {
-        padding: 0;
+        padding: 0 6vw;
     }
     .footer-content dl {
-        padding-left: 2vw;
+        padding-left: 6vw;
         margin-top: 5vh;
     }
     .footer-content dl:nth-child(1)::after, .footer-content dl:nth-child(2)::after {
@@ -260,12 +256,6 @@
         display: none !important;
     }
 }
-@media (max-width:375px) {
-    .footer-law {
-        padding-bottom: 14px;
-    }
-}
-
 
 
 

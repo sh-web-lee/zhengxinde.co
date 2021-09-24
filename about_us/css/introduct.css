@@ -44,14 +44,14 @@
     justify-content: space-around;
     position: relative;
 }
-.int-detail .int-detail-milestone::after {
+/* .int-detail .int-detail-milestone::after {
     content: "";
     position: absolute;
     width: 1200px;
     height: 1px;
     background-color: #CCCCCC;
     bottom: 191px;
-}
+} */
 .int-detail .int-detail-milestone dl {
     flex: 1;
 }
@@ -107,6 +107,7 @@
     .int-detail .int-detail-subdescribe {
         font-size: 16px;
         margin-top: 50px;
+        padding: 0 6vw;
     }
     .sub-banner {
         padding: 0;

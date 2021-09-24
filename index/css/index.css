@@ -1,5 +1,5 @@
 .home-banner {
-    margin: 70px auto 0;
+    margin: 70px 2vw 0;
     background: url(../images/banner-bg.png) no-repeat center 0;
     border-radius: 20px 20px 0 0;
     text-align: center;
@@ -243,7 +243,7 @@
         width: auto;
     }
     .home-business {
-        margin-top: 50px;
+        margin: 50px 2vw 0;
     }
     .home-business-title {
         font-size: 36px;
@@ -269,6 +269,8 @@
     }
     .home-contact-map {
         height: 51vh;
+        width: 90%;
+        margin: 0 auto;
     }
     .home-business-items .home-business-item dd p {
         font-size: 14px;
@@ -295,67 +297,7 @@
         top: 166px;
         right: 14px;
     }
+    .home-vision {
+        margin: 45px 2vw 0;
+    }
 }
-/* @media (max-width: 375px) {
-    .home-business-title::after {
-        right: 1vw;
-    }
-    .home-business-title {
-        text-align: left;
-        text-indent: 29px;
-    }
-    .home-vision .container {
-        background-position: center 58px;
-        background: url(../images/vision-main-mob.png) no-repeat center 276px;
-        background-size: 100%;
-        padding-bottom: 41px;
-    }
-    .home-vision-subtitle {
-        padding: 0 2vw;
-    }
-    .home-vision-subtitle em {
-        display: inline-block;
-    }
-    .home-vision-item-title {
-        font-size: 32px;
-    }
-    .home-vision-item-title span {
-        font-size: 20px;
-    }
-    .home-vision-main {
-        margin: 0;
-        flex-direction: column;
-        padding: 88px 0 0px 37px;
-        width: 84%;
-    }
-    .home-vision-item-content {
-        position: relative;
-        font-size: 20px;
-    }
-    .home-vision-item-content span {
-        font-size: 16px;
-    }
-    .home-vision-item:nth-child(1) .home-vision-item-content::after {
-        content: "";
-        background-color: #fff;
-        position: absolute;
-        width: 78vw;
-        height: 1px;
-        top: 104px;
-        left: -50%;
-        transform: translateX(50%);
-    }
-    .home-vision-item:nth-child(2) {
-        margin-top: 80px;
-    }
-    .home-vision-item:nth-child(1)::after {
-        position: relative;
-    }
-    .home-vision-item {
-        padding-left: 0;
-        width: 100%;
-    }
-    .home-vision-item:nth-child(1) .home-vision-item-content {
-        margin-top: 19px;
-    }
-} */

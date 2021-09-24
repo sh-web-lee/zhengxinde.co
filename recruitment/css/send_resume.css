@@ -176,6 +176,12 @@
         line-height: 38px;
         font-size: 12px;
     }
+    .submit-resume {
+        padding: 5vh 2vw 8.5vh;
+    }
+    .submit-resume-content-mes {
+        flex-direction: column;
+    }
     .submit-resume-content .submit-resume-content-post-name-p2 {
         font-size: 20px;
     }
@@ -185,15 +191,12 @@
     .submit-resume-content .submit-resume-content-post-name-p3 dl:not(:last-child)::after {
         background-color: #fff;
     }
+    .submit-resume-content-mes .mes-mail {
+        margin: 10px 0 0;
+    }
 }
 
 
 
 @media (max-width: 375px) {
-    .submit-resume-content-mes {
-        flex-direction: column;
-    }
-    .submit-resume-content-mes .mes-mail {
-        margin: 0;
-    }
 }
