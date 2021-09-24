@@ -153,7 +153,7 @@
     }
     .colleague-banner .colleague-banner-content dl {
         margin: 0 auto 15px;
-        height: 44vh;
+        height: 406px;
     }
     .colleague-banner .colleague-banner-content dl dd p {
         padding-left: 15px;
@@ -176,9 +176,6 @@
     }
     .colleague-banner .container {
         max-width: 90%;
-    }
-    .colleague-banner .colleague-banner-content dl {
-        height: 61vh;
     }
     .colleague-banner .colleague-banner-content dl dd p {
         font-size: 12px;

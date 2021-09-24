@@ -195,28 +195,31 @@
     .post-list-false {
         padding: 29.5vh 0 31.2vh;
     }
+    .recriut-post {
+        padding-bottom: 28px;
+    }
     .recriut-post .recriut-post-search .recriut-post-search-box {
         padding: 4vh 6vw;
     }
     .recriut-post .recriut-post-search .recriut-post-search-box .recriut-post-input {
-        padding: 2vh 0 4px 1vw;
-        width: 64vw;
-        height: 52px;
+        padding: 10px 0 4px 5px;
+        width: 66%;
+        height: 40px;
     }
     .recriut-post .recriut-post-search .recriut-post-search-box .btn-post-search {
-        padding: 12px 35px 11px;
+        width: 100px;
+        height: inherit;
+        padding: 0;
+    }
+    .recriut-post table tbody tr {
+        font-size: 12px;
     }
     .recriut-post table tbody tr:not(:last-child) ::after {
         width: 87.36vw;
         left: 17px;
     }
-}
-
-
-@media (max-width:375px) {
-    .recriut-post .recriut-post-search .recriut-post-search-box .recriut-post-input {
-        height: 7vh;
-        width: 170px;
+    .recriut-post table tbody .post-name {
+        padding-left: 2vw;
     }
     .recriut-post table tbody tr td a {
         width: 60px;
@@ -224,13 +227,5 @@
         line-height: 28px;
         font-size: 12px;
     }
-    .recriut-post table tbody .post-name {
-        padding-left: 2vw;
-    }
-    .recriut-post table tbody tr {
-        font-size: 12px;
-    }
-    .recriut-post {
-        padding-bottom: 28px;
-    }
 }
+

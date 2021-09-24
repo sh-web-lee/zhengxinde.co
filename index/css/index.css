@@ -17,9 +17,8 @@
     background: url(../images/vision-bg.png) no-repeat center 365px;
 }
 .home-vision .container {
-    height: 100%;
     background: url(../images/vision-main.png) no-repeat center 1px;
-    padding-bottom: 235px;
+    padding-bottom: 211px;
 }
 .home-vision-head {
     padding-top: 14px;
@@ -201,16 +200,25 @@
     }
     .home-vision-title {
         font-size: 36px;
+        line-height: 47px;
     }
     .home-vision-subtitle {
-        font-size: 20px;
+        margin-top: 12px;
+        font: normal normal normal 20px/28px JiangChengYuanTi500;
+    }
+    .home-vision-subtitle em {
+        display: inline-block;
     }
     .home-vision-subtitle span {
         font: normal normal bold 14px JiangChengYuanTiBold;
     }
     .home-vision-main {
-        margin: 17% auto 0;
+        margin: 34px auto 0;
         width: 100%;
+        flex-direction: column;
+        background: url(../images/vision-main-mob.png) no-repeat center 1px;
+        background-size: cover;
+        padding: 50px 0 46px;
     }
     .home-vision-item-content {
         margin-top: 13px;
@@ -218,6 +226,7 @@
     }
     .home-vision-item:nth-child(2) {
         text-align: left;
+        margin-top: 65px;
     }
     .home-vision-item-title {
         font-size: 32px;
@@ -230,14 +239,15 @@
         font-size: 16px;
     }
     .home-vision-item {
-        /* width: 100%; */
-        padding-left: 50px;
+        padding-left: 11%;
+        width: auto;
     }
     .home-business {
         margin-top: 50px;
     }
     .home-business-title {
-        font-size: 40px;
+        font-size: 36px;
+        text-indent: -40px;
     }
     .home-business-items .home-business-item {
         width: 100%;
@@ -258,27 +268,35 @@
         margin-top: 6vh;
     }
     .home-contact-map {
-        /* padding: 0; */
         height: 51vh;
     }
     .home-business-items .home-business-item dd p {
         font-size: 14px;
     }
     .home-business-title::after {
-        right: 16vw;
+        right: auto;
+        background-size: 70%;
+        background-repeat: no-repeat;
+        top: 20px;
     }
     .home-vision-head {
         padding: 0;
     }
     .home-vision .container {
-        background-position: center 58px;
-        background-size: 100%;
+        background: none;
+        padding: 0;
     }
     .home-vision-item:nth-child(1) .home-vision-item-content {
-        margin-top: 50px;
+        margin-top: 31px;
+    }
+    .home-vision-item:nth-child(1)::after {
+        width: 92%;
+        height: 1px;
+        top: 166px;
+        right: 14px;
     }
 }
-@media (max-width: 375px) {
+/* @media (max-width: 375px) {
     .home-business-title::after {
         right: 1vw;
     }
@@ -340,4 +358,4 @@
     .home-vision-item:nth-child(1) .home-vision-item-content {
         margin-top: 19px;
     }
-}
+} */

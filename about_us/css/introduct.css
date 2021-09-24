@@ -85,16 +85,28 @@
 @media (max-width:768px) {
     .int-detail .container {
         background-position: center 47px;
-        padding: 70px 10px 0;
+        padding: 70px 0 0;
+        background: url(../images/describe-bg-mob.svg) no-repeat center 428px;
+        background-size: 100%;
     }
     .int-detail .int-detail-title {
         font-size: 36px;
+        line-height: 47px;
+    }
+    .int-detail .int-detail-milestone {
+        flex-direction: column;
     }
     .int-detail .int-detail-milestone dl dd {
-        font-size: 12px;
+        padding: 0 30px;
+        text-align: center;
+        font: normal normal normal 18px/28px JiangChengYuanTi500;
+        letter-spacing: 0px;
+        color: #333333;
+        margin-top: -47px;
     }
     .int-detail .int-detail-subdescribe {
         font-size: 16px;
+        margin-top: 50px;
     }
     .sub-banner {
         padding: 0;
@@ -102,48 +114,33 @@
     .sub-banner .container {
         background-size: 100%;
     }
-}
-
-
-@media (max-width:375px) {
-    .int-detail .int-detail-describe {
-        padding: 0 10vw;
-        margin-bottom: 5px;
-    }
-    .int-detail .int-detail-milestone {
-        flex-direction: column;
-    }
-    .int-detail .container {
-        background-position: 1px 1px;
-        background-size: 100%;
-        background: url(../images/describe-bg-mob.svg) no-repeat center 428px;
-        background-size: 100%;
-    }
-    .int-detail .int-detail-milestone img {
-        transform: scale(0.5);
-    }
-    .int-detail .int-detail-milestone dl dd {
-        text-align: center;
-        font: normal normal normal 18px/28px JiangChengYuanTi500;
-        letter-spacing: 0px;
-        color: #333333;
-    }
     .int-detail .int-detail-milestone::after {
         position: relative;
+        width: 0;
+    }
+    .int-detail .int-detail-describe {
+        padding: 0 40px;
+        margin-bottom: 5px;
+        line-height: 28px;
     }
     .int-detail .int-detail-milestone dl dt {
         margin: 0;
         position: relative;
+    }
+    .int-detail .int-detail-milestone img {
+        transform: scale(0.5);
     }
     .int-detail .int-detail-milestone dl dt::after {
         position: absolute;
         font: normal normal normal 22px/38px JiangChengYuanTi500;
         letter-spacing: 0px;
         top: 102px;
-        right: 144px;
+        right: 50%;
+        transform: translateX(50%);
         color: #FFFFFF;
+        
     }
-    .int-detail .int-detail-milestone dl:nth-child(1) dt::after{
+    .int-detail .int-detail-milestone dl:nth-child(1) dt::after {
         content: '2005';
     }
     .int-detail .int-detail-milestone dl:nth-child(2) dt::after{
@@ -154,8 +151,5 @@
     }
     .int-detail .int-detail-milestone dl:nth-child(4) dt::after{
         content: '2012';
-    }
-    .int-detail .int-detail-subdescribe {
-        padding: 0 5vw;
     }
 }

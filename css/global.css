@@ -238,6 +238,7 @@
     .footer-content {
         flex-direction: column;
         margin-top: 0;
+        width: auto;
     }
     .footer-content h1 {
         padding: 0;
@@ -249,19 +250,19 @@
     .footer-content dl:nth-child(1)::after, .footer-content dl:nth-child(2)::after {
         position: relative;
     }
-    .footer-law {
-        padding-bottom: 157px;
-    }
-}
-@media (max-width:375px) {
-    .footer-law {
-        padding-bottom: 14px;
+    .container {
+        width: 100% !important;
     }
     .mob {
         display: block !important;
     }
     .pc {
         display: none !important;
+    }
+}
+@media (max-width:375px) {
+    .footer-law {
+        padding-bottom: 14px;
     }
 }
 
