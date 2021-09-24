@@ -9,7 +9,7 @@
 }
 .colleague-banner .container {
     padding-bottom: 10.56vh;
-    max-width: 73vw;
+    width: 73vw;
 }
 .colleague-banner h1 {
     margin-top: 10.03vh;
@@ -29,7 +29,7 @@
     padding-top: 106px;
 }
 .colleague-banner .colleague-banner-content dl {
-    height: 46vh;
+    height: 435px;
     overflow: hidden;
     box-shadow: 0px 5px 40px rgba(0, 0, 0, 0.2);
     border-top-left-radius: 20px;
@@ -37,14 +37,13 @@
 }
 .colleague-banner .colleague-banner-content dl:hover {
     transform: translateY(-20px);
-    transition: all .3s;
+    transition: all .5s;
 }
 .colleague-banner .colleague-banner-content dl:hover dd {
     transform: translateY(-180px);
-    transition: all .3s;
+    transition: all .5s;
 }
 .colleague-banner .colleague-banner-content dl dd {
-    padding: 19px 0.99vw 27px 16px;
     padding: 2.02vh 0.99vw 2.88vh 0.83vw;
     position: relative;
     background-color: #fff;

@@ -20,8 +20,8 @@
     text-align: center;
 }
 .int-detail .container {
-    max-width: 1400px;
-    background: url(../images/describe-bg.png) no-repeat center 172px;
+    width: 1400px;
+    background: url(../images/describe-bg.png) no-repeat center 195px;
     overflow: hidden;
     padding: 147px 0 113px;
 }
