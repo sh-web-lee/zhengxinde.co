@@ -76,19 +76,19 @@
                 <h1 class="int-detail-title">公司简介</h1>
                 <p class="int-detail-describe">我们是一家面向欧美的互联网公司，公司自主研发销售的各类软件，用户覆盖全球220多个国家和地区，拥有已超10亿的用户数量。</p>
                 <div class="int-detail-milestone scroll-animation pc">
-                    <dl class="int-detail-milestone-item1 fadeInUp fadeDelay01">
+                    <dl class="int-detail-milestone-item1">
                         <dt><img src="./images/items-2005.png" alt=""></dt>
                         <dd>2005年，团队成立；</dd>
                     </dl>
-                    <dl class="int-detail-milestone-item2 fadeInUp fadeDelay10">
+                    <dl class="int-detail-milestone-item2">
                         <dt><img src="./images/items-2006.png" alt=""></dt>
                         <dd>2006年，发布的Advanced Windows<br>Care，迅速在欧美流行开来，<br>团队也由此进入了高速发展期，<br>办公地遍布香港、美国等地；</dd>
                     </dl>
-                    <dl class="int-detail-milestone-item3 fadeInUp fadeDelay20">
+                    <dl class="int-detail-milestone-item3">
                         <dt><img src="./images/items-2011.png" alt=""></dt>
                         <dd>2011年公司获得美国风投公司IDG<br>千万美元注资，再获腾讯战略投资，<br>同时与搜狐畅游、IGG、第七大道等<br>公司达成合作，同年也获得<br>“中国优秀雇主荣誉称号”；</dd>
                     </dl>
-                    <dl class="int-detail-milestone-item4 fadeInUp fadeDelay30">
+                    <dl class="int-detail-milestone-item4">
                         <dt><img src="./images/items-2012.png" alt=""></dt>
                         <dd>2012年底，公司成功在香港上市，<br>标志着公司正以日新月异的速度<br>发展成为世界一流的互联网上市公司。</dd>
                     </dl>
@@ -160,22 +160,4 @@
 </body>
 </html>
 <script src="../js/jquery-1.11.3.min.js"></script>
-<script data-instruction="showCode">
-    $(function(){
-        $('.showFloat').mouseover(function(e) {
-            $('.default-icon').hide()
-            $('.active-icon').show()
-        })
-        $('.showFloat').mouseleave(function() {
-            $('.default-icon').show()
-            $('.active-icon').hide()
-        })
-    })
-    </script>
-<script data-instruction="dropMenu">
-    $('.header-nav li span').click(function() {
-        $(this).parent().hasClass('active') ? $(this).parent().removeClass('active') : $(this).parent().addClass('active')
-        $(this).parent().siblings().removeClass('active')
-    })
-</script>
-<script src="../js/scroll-animation.js"></script>
+<script src="../js/global.js"></script>
