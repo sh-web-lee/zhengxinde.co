@@ -13,9 +13,9 @@
     width: 100%;
     display: inline-block;
     image-rendering: -webkit-optimize-contrast;
-    image-rendering: -moz-crisp-edges;
+    /* image-rendering: -moz-crisp-edges; */
     image-rendering: -o-crisp-edges;
-    image-rendering: crisp-edges;
+    /* image-rendering: crisp-edges; */
 }
 .home-vision {
     margin-top: 45px;
