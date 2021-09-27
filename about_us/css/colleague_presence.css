@@ -173,4 +173,10 @@
     .colleague-banner .colleague-banner-content dl:hover dd {
         padding: 12px;
     }
+    .photo-wall .photo-wall-content2 {
+        margin: 5px 0;
+    }
+    .photo-wall .photo-wall-content1 .photo-wall-content1-photo2, .photo-wall-content2 .photo-wall-content2-photo2, .photo-wall-content3 .photo-wall-content2-photo2 {
+        margin: 0 5px;
+    }
 }
