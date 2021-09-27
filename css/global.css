@@ -31,7 +31,7 @@
     position: relative;
 }
 .header-nav li span {
-    padding: 0 44px;
+    margin: 0 44px;
     font: normal normal normal 18px/24px JiangChengYuanTi500;
     color: #000;
 }
