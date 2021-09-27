@@ -3,13 +3,14 @@
     background: url(../images/banner-bg.png) no-repeat center 0;
     border-radius: 20px 20px 0 0;
     text-align: center;
+    height: calc(100vh - 70px);
 }
 .home-banner .container {
     padding-top: 106px;
     margin-bottom: 2px;
 }
 .home-banner img {
-    max-width: 100%;
+    width: 100%;
     display: inline-block;
 }
 .home-vision {

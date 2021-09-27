@@ -293,5 +293,8 @@
     .salary-welfare {
         padding: 281px 2vw 0;
     }
+    .salary-banner .salary-banner-icons {
+        height: auto;
+    }
 }
 
