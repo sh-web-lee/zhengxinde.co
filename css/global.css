@@ -195,10 +195,11 @@
 .wechat-code img {
     display: inline-block;
     width: 100%;
-    transform: scale(0.74);
+    transform: scale(0.75);
     position: absolute;
     top: -11%;
     left: 7%;
+    image-rendering: -webkit-optimize-contrast;
 }
 .mob {
     display: none !important;
