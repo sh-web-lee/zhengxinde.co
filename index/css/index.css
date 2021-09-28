@@ -11,12 +11,9 @@
     max-width: 1035px;
 }
 .home-banner img {
-    width: 100%;
     display: inline-block;
     image-rendering: -webkit-optimize-contrast;
-    /* image-rendering: -moz-crisp-edges; */
     image-rendering: -o-crisp-edges;
-    /* image-rendering: crisp-edges; */
 }
 .home-vision {
     margin-top: 45px;
@@ -203,6 +200,9 @@
 
 
 @media (max-width: 768px) {
+    .home-banner img {
+        width: 100%;
+    }
     .home-banner {
         height: auto;
     }
