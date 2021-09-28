@@ -205,6 +205,9 @@
     display: none !important;
 }
 @media (max-width:768px) {
+    .header-nav li .dropmenu dl {
+        width: auto;
+    }
     .header .logo-box {
         margin-left: 6vw;
     }
