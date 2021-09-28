@@ -43,6 +43,7 @@
     display: block;
     animation: drop-menu .5s;
     position: absolute;
+    top: 50px;
 }
 .header-nav .active span {
     color: #1D77E6;
@@ -56,12 +57,13 @@
     padding: 14px 9px;
 }
 .header-nav li .dropmenu dl {
-    height: 42px;
+    height: 48px;
+    width: 150px;
     line-height: 48px;
-    padding-right: 1.197vw;
+    margin-bottom: 4px;
 }
 .header-nav li .dropmenu dl:hover {
-    background: #F0F0F0 0% 0% no-repeat padding-box;
+    background: #F5F5F5 0% 0% no-repeat padding-box;
     border-radius: 8px;
     cursor: pointer;
 }
@@ -124,7 +126,7 @@
 .footer-content dl:nth-child(1)::after, .footer-content dl:nth-child(2)::after{
     content: "";
     background: #E0E0E0;
-    width: 2px;
+    width: 1px;
     height: 200px;
     position: absolute;
     top: 0;
@@ -162,12 +164,12 @@
     padding-left: 18px;
 }
 .footer-law {
-    border-top: 2px solid #f9f9f9;
+    border-top: 1px solid #e0e0e0;
     margin-top: 35px;
     text-align: center;
 }
 .footer-law p {
-    font: normal normal normal 13px/57px JiangChengYuanTi;
+    font: normal normal normal 13px/58px JiangChengYuanTi400;
     color: #888888;
 }
 .active-icon {
@@ -180,22 +182,23 @@
     display: block;
 }
 .wechat-code {
-    width: 102px;
-    height: 80px;
-    background: url(../images/code-box.png) no-repeat -13px -8px;
+    width: 133px;
+    height: 108px;
+    background: url(../images/newcode-box.png) no-repeat -10px -4px;
+    background-size: 116%;
     position: absolute;
-    top: 4px;
-    left: 65px;
+    top: -10px;
+    left: 58px;
     display: none;
     animation: showCode .5s;
 }
 .wechat-code img {
     display: inline-block;
     width: 100%;
-    transform: scale(0.7);
+    transform: scale(0.74);
     position: absolute;
-    top: -14%;
-    left: 6%;
+    top: -11%;
+    left: 7%;
 }
 .mob {
     display: none !important;
@@ -214,6 +217,7 @@
     .header-nav li span {
         font-size: 16px;
         padding: 0 8px;
+        margin: 0;
     }
     .header-nav .active .dropmenu {
         width: 95px;
@@ -280,11 +284,11 @@
     src: url(./Helvetica\ Rounded\ LT\ Bold.ttf);
 }
 @font-face {
-    font-family: JiangChengYuanTi;
+    font-family: JiangChengYuanTiBlack;
     src: url(./Helvetica\ Rounded\ LT\ Black.ttf);
 }
 @font-face {
-    font-family: JiangChengYuanTi;
+    font-family: JiangChengYuanTiBoldOblique;
     src: url(./Helvetica\ Rounded\ LT\ Bold\ Oblique.ttf);
 }
 @font-face {

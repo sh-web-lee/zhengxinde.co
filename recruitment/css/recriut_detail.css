@@ -1,14 +1,11 @@
-.box {
-    background: #FAFAFA 0% 0% no-repeat padding-box;
-}
 .detail {
     margin-top: 70px;
-    background: transparent url('../images/detail-bg.png') 0% 0% no-repeat padding-box;
+    background: transparent url('../images/back.png') 0% 0% no-repeat padding-box;
     padding: 6vh 0 80px;
 }
 .detail-content {
     background-color: #fff;
-    padding: 4.05vh 2.56vw 10vh 3.5vw;
+    padding: 4.05vh 2.56vw 10vh 2.63vw;
     border-radius: 5px;
     border: 1px solid #EEF0F2;
 }

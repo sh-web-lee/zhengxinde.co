@@ -14,12 +14,13 @@
 .recriut-nav {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: center;
     margin-top: 52px;
 }
 .recriut-nav li {
     width: 168px;
     height: 80px;
+    margin-left: 25px;
     text-align: center;
     background: #FFFFFF 0% 0% no-repeat padding-box;
     box-shadow: 0px 3px 15px #00000012;
@@ -76,21 +77,23 @@
     border: 0;
     outline: none;
 }
+.recriut-post .recriut-post-search .recriut-post-search-box .btn-post-search:hover {
+    background: #0E62E2 0% 0% no-repeat padding-box;
+}
 .recriut-post table {
     width: 100%;
     margin-top: 20px;
-    border-radius: 5px 5px 0px 0px;
+    border: 1px solid #EEF0F2;
 }
 .recriut-post table thead {
-    background: #E7EAEE 0% 0% no-repeat padding-box;
     line-height: 50px;
-    border-radius: 5px 5px 0px 0px;
     font: normal normal normal 14px/50px JiangChengYuanTi400;
     letter-spacing: 0px;
     color: #000000;
 }
 .recriut-post table thead td {
     text-align: center;
+    background: #E7EAEE 0% 0% no-repeat padding-box;
 }
 .recriut-post table tbody {
     background-color: #fff;
@@ -107,8 +110,12 @@
     background-color: #EEF0F2;
     bottom: 0;
     width: 1100px;
-    height: 2px;
+    height: 1px;
     left: 40px;
+}
+.recriut-post table tbody tr:last-child td {
+    padding: 0;
+    height: 64.5px;
 }
 .recriut-post table tbody tr td {
     padding-top: 14px;
@@ -122,10 +129,11 @@
     width: 86px;
     height: 36px;
     text-align: center;
-    font: normal normal normal 14px/36px JiangChengYuanTi;
+    font: normal normal normal 14px/36px JiangChengYuanTi400;
     letter-spacing: 0px;
     color: #FF6E5A;
     margin: 0 auto;
+    box-sizing: border-box;
 }
 .recriut-post table tbody tr td a:hover {
     background-color: #FF6E5A;
@@ -166,7 +174,7 @@
     margin: 0 12px;
 }
 .post-list-false {
-    padding: 277px 0 292px;
+    padding: 241px 0 292px;
 }
 .post-list-false p {
     font: normal normal normal 18px/24px JiangChengYuanTi500;

@@ -109,8 +109,9 @@
     font: normal normal normal 36px/48px JiangChengYuanTi500;
     letter-spacing: 0px;
     color: #FFFFFF;
-    top: 200px;
-    right: 98px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 .photo-wall .photo-wall-content2 .photo-wall-content2-photo1, .photo-wall-content3 .photo-wall-content3-photo3 {
     position: relative;
@@ -121,8 +122,9 @@
     font: normal normal normal 36px/48px JiangChengYuanTi500;
     letter-spacing: 0px;
     color: #FFFFFF;
-    top: 200px;
-    right: 98px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 .photo-wall .photo-wall-content3 .photo-wall-content3-photo3::after {
     content: 'On the way';
@@ -131,7 +133,7 @@
     letter-spacing: 0px;
     color: #FFFFFF;
     top: 200px;
-    right: 98px;
+    right: 74px;
 }
 .photo-wall .photo-wall-content2 {
     margin-top: 6.93vh;
