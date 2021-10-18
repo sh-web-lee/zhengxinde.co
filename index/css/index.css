@@ -1,20 +1,161 @@
 .home-banner {
-    margin: 70px 2vw 0;
+    margin: 70px 0 0;
     background: url(../images/banner-bg.png) no-repeat center 0;
     border-radius: 20px 20px 0 0;
     text-align: center;
     height: 82.26vh;
 }
 .home-banner .container {
-    padding-top: 106px;
     margin-bottom: 2px;
-    max-width: 1035px;
+    height: 100%;
 }
 .home-banner img {
     display: inline-block;
     image-rendering: -webkit-optimize-contrast;
     image-rendering: -o-crisp-edges;
+    position: absolute;
 }
+.home-banner img:nth-child(1) {
+    z-index: 20;
+    top: 153px;
+    left: 329px;
+    opacity: 0;
+    animation: roomIn .6s 0.3s forwards;
+    animation-timing-function: cubic-bezier(0.175, 0.885, 0.35, 1.09);
+}
+.home-banner img:nth-child(2) {
+    bottom: 97px;
+    z-index: 19;
+    right: 84px;
+    bottom: -27px;
+    right: 24px;
+    opacity: 0;
+    animation: scaleIn2 1s 3s forwards;
+    animation-timing-function: cubic-bezier(0.26, 0.47, 0.27, 1.1);
+}
+.home-banner img:nth-child(3) {
+    top: 56px;
+    left: 46px;
+    opacity: 0;
+    z-index: 19;
+    animation: scaleIn3 1s 3s forwards;
+    animation-timing-function: cubic-bezier(0.26, 0.47, 0.27, 1.1);
+}
+.home-banner img:nth-child(4) {
+    bottom: 307px;
+    left: 18px;
+    opacity: 0;
+    animation: zoomInLeft 1s 3s forwards;
+    animation-timing-function: cubic-bezier(0.26, 0.47, 0, 1.1);
+}
+.home-banner img:nth-child(5) {
+    top: 156px;
+    right: 138px;
+    opacity: 0;
+    animation: zoomInTop 1s 3s forwards;
+    animation-timing-function: cubic-bezier(0.26, 0.47, 0, 1.1);
+}
+.home-banner img:nth-child(6) {
+    bottom: 153px;
+    left: 6px;
+    z-index: 19;
+    transform: scale(0.5);
+    opacity: 0;
+    animation: scaleInBottom .5s 2.2s forwards;
+    animation-timing-function: cubic-bezier(0.175, 0.885, 0.35, 1.09);
+}
+.home-banner img:nth-child(7) {
+    top: 10px;
+    right: 250px;
+    opacity: 0;
+    transform: scale(0.5);
+    z-index: 19;
+    animation: scaleInTop .5s 2.2s forwards;
+    animation-timing-function: cubic-bezier(0.175, 0.885, 0.35, 1.09);
+}
+.home-banner .home-banner-rectt {
+    top: -500px;
+    left: 279px;
+    animation: fadeInUp .3s 1.5s forwards;
+    animation-timing-function: cubic-bezier(0.175, 0.885, 0.35, 1.09);
+}
+.home-banner .home-banner-rectb {
+    bottom: -400px;
+    right: 233px;
+    animation: fadeInDown .3s 1.5s forwards;
+    animation-timing-function: cubic-bezier(0.175, 0.885, 0.35, 1.09);
+}
+
+/* hot */
+.home-hot {
+    position: relative;
+    top: -69px;
+}
+.home-hot .container {
+    width: 100%;
+}
+.home-hot h1 {
+    text-align: center;
+    font: normal normal normal 40px/53px JiangChengYuanTi500;
+    letter-spacing: 0px;
+    color: #000000;
+}
+.home-hot .home-hot-main {
+    margin: 24px auto 108px;
+    width: 1400px;
+    height: 144px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 4px 26px #00000014;
+    border-radius: 8px;
+}
+.home-hot .home-hot-main ul {
+    display: flex;
+    padding: 52px 0 56px 140px;
+}
+.home-hot .home-hot-main ul li {
+    display: flex;
+    position: relative;
+    margin-right: 95px;
+}
+.home-hot .home-hot-main ul li img {
+    position: relative;
+    top: 13px;
+    animation: jump-effect 1.8s ease infinite;
+}
+.home-hot .home-hot-main ul li:nth-child(1)::after, .home-hot .home-hot-main ul li:nth-child(2)::after {
+    position: absolute;
+    content: "";
+    width: 1px;
+    height: 32px;
+    background-color: #ccc;
+    top: 8px;
+    right: -39.5px;
+}
+.home-hot .home-hot-main ul li a b {
+    font: normal normal normal 16px/51px JiangChengYuanTi500;
+    letter-spacing: 0px;
+    color: #333333;
+    margin-left: 7px;
+}
+.home-hot .home-hot-main ul .more-position {
+    display: block;
+    text-align: center;
+    width: 86px;
+    height: 36px;
+    background: #FFB70E 0% 0% no-repeat padding-box;
+    border-radius: 20px;
+    font: normal normal normal 18px/36px JiangChengYuanTi;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    margin-top: 5px;
+    transition: all .3s;
+}
+.home-hot .home-hot-main ul .more-position:hover {
+    background-color: #FFC70E;
+}
+
+
+
 .home-vision {
     margin-top: 45px;
     background: url(../images/vision-bg.png) no-repeat center 365px;
@@ -148,6 +289,63 @@
     box-shadow: 0px 5px 30px #00000014;
     border-radius: 10px;
 }
+
+.home-team {
+    padding: 134px 19px 92px;
+}
+.home-team .container  {
+    width: 100%;
+}
+.home-team h1 {
+    text-align: center;
+    font: normal normal normal 52px/69px JiangChengYuanTi500;
+    letter-spacing: 0px;
+    color: #000000;
+}
+.home-team .home-team-main {
+    margin: 78px auto 0;
+    overflow: hidden;
+}
+.home-team .home-team-main ul {
+    display: flex;
+    position: relative;
+}
+.home-team .home-team-main ul>div {
+    display: flex;
+}
+.home-team .home-team-main ul li {
+    margin-right: 22px;
+}
+.home-team .home-team-main ul li img {
+    display: inline-block;
+    image-rendering: -moz-crisp-edges;
+    image-rendering: -webkit-optimize-contrast;
+}
+.home-team .home-team-main ul .double-items {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.home-team .home-team-main a {
+    display: block;
+    margin: 64px auto 0;
+    text-align: center;
+    width: 300px;
+    height: 54px;
+    border-radius: 8px;
+    border: 1px solid;
+    font: normal normal normal 18px/54px JiangChengYuanTi500;
+    letter-spacing: 0px;
+    color: #000;
+    transition: all .3s;
+}
+.home-team .home-team-main a:hover {
+    background: transparent linear-gradient(90deg, #EFAF23 0%, #FFC013 100%) 0% 0% no-repeat padding-box;
+    color: #FFFFFF;
+}
+
+
+
 .home-contact {
     margin-top: 91px;
     padding-bottom: 73px;
@@ -179,7 +377,7 @@
     padding: 9px 8px 8px 9px;
 }
 .home-contact-apply .home-btn-apply {
-    background: transparent linear-gradient(90deg, #EFAF23 0%, #FFC013 100%) 0% 0% no-repeat padding-box;
+    background: linear-gradient(90deg, #EFAF23 0%, #FFC013 100%) 0% 0% no-repeat padding-box;
     border-radius: 6px;
     display: block;
     width: 380px;
@@ -194,17 +392,22 @@
     /* transition: all .3s; */
 }
 .home-contact-apply .home-btn-apply:hover {
-    background: #FFC013;
+    background: #FFC013 0% 0% no-repeat padding-box;
 }
-
-
-
+.header-active {
+    border-bottom: 1px solid #e5e5e5;
+}
+.active-animation {
+    animation: effect-float 3s infinite linear !important;
+    opacity: 1 !important;
+}
 @media (max-width: 768px) {
     .home-banner img {
         width: 100%;
     }
     .home-banner {
         height: auto;
+        margin: 70px 2vw 0;
     }
     .home-business-items {
         flex-direction: column;

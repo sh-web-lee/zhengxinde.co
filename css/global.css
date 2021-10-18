@@ -1,3 +1,76 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+	background: transparent;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+
+/* remember to define focus styles! */
+:focus {
+	outline: 0;
+}
+
+/* remember to highlight inserts somehow! */
+ins {
+	text-decoration: none;
+}
+del {
+	text-decoration: line-through;
+}
+
+/* tables still need 'cellspacing="0"' in the markup */
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+a {
+	text-decoration: none;
+}
+.fl {
+    float: left;
+}
+.fr {
+    float: right;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* header */
 .header {
     position: fixed;
@@ -179,17 +252,20 @@
     position: relative;
 }
 .showFloat:hover .wechat-code {
-    display: block;
+    animation: showWechat .3s linear forwards;
+    /* display: block; */
 }
 .wechat-code {
-    width: 133px;
-    height: 108px;
+    /* width: 133px;
+    height: 108px; */
+    width: 0;
+    height: 0;
     background: url(../images/newcode-box.png) no-repeat -10px -4px;
     background-size: 116%;
     position: absolute;
-    top: -10px;
+    top: 42px;
     left: 58px;
-    display: none;
+    /* display: none; */
     animation: showCode .5s;
 }
 .wechat-code img {

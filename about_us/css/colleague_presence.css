@@ -35,16 +35,16 @@
     box-shadow: 0px 5px 40px rgba(0, 0, 0, 0.2);
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
+    transition: all .5s;
 }
 .colleague-banner .colleague-banner-content dl:hover {
     transform: translateY(-20px);
-    transition: all .5s;
 }
 .colleague-banner .colleague-banner-content dl:hover dd {
     transform: translateY(-77%);
-    transition: all .5s;
 }
 .colleague-banner .colleague-banner-content dl dd {
+    transition: all .5s;
     padding: 12px 12px 2.88vh;
     position: relative;
     background-color: #fff;

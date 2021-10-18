@@ -21,7 +21,7 @@
 }
 .int-detail .container {
     width: 1400px;
-    background: url(../images/describe-bg.png) no-repeat center 195px;
+    background: url(../images/describe-bg.png) no-repeat center 105px;
     overflow: hidden;
     padding: 147px 0 113px;
 }
@@ -31,12 +31,10 @@
     color: #000000;
 }
 .int-detail .int-detail-describe {
-    margin-top: 27px;
     margin-bottom: 94px;
     font: normal normal normal 18px/34px JiangChengYuanTi400;
     letter-spacing: 0px;
     color: #000000;
-    padding: 0 22vw;
 }
 
 .int-detail .int-detail-milestone {

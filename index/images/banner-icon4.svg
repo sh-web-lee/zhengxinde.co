@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="81.085" height="101.511" viewBox="0 0 81.085 101.511">
+  <g id="组_669" data-name="组 669" transform="translate(-1170.667 -233)">
+    <g id="组_665" data-name="组 665" transform="translate(1207.671 264.97) rotate(150)" opacity="0.6">
+      <circle id="椭圆_1604" data-name="椭圆 1604" cx="8.39" cy="8.39" r="8.39" transform="translate(0 20.136)" fill="#a1cbff"/>
+      <circle id="椭圆_1605" data-name="椭圆 1605" cx="5.034" cy="5.034" r="5.034" transform="translate(16.78 10.068)" fill="#a1cbff"/>
+      <circle id="椭圆_1606" data-name="椭圆 1606" cx="5.034" cy="5.034" r="5.034" transform="translate(26.848 0)" fill="#a1cbff"/>
+    </g>
+    <g id="组_663" data-name="组 663" transform="translate(1253.209 326.249) rotate(150)" opacity="0.6">
+      <circle id="椭圆_1610" data-name="椭圆 1610" cx="8.39" cy="8.39" r="8.39" transform="translate(16.525 0) rotate(80)" fill="#a1cbff"/>
+      <circle id="椭圆_1611" data-name="椭圆 1611" cx="5.034" cy="5.034" r="5.034" transform="translate(29.354 14.777) rotate(80)" fill="#a1cbff"/>
+      <circle id="椭圆_1612" data-name="椭圆 1612" cx="5.034" cy="5.034" r="5.034" transform="translate(41.017 22.943) rotate(80)" fill="#a1cbff"/>
+    </g>
+    <g id="search" transform="translate(1191.588 251)">
+      <path id="路径_544" data-name="路径 544" d="M33.178,0A20.393,20.393,0,0,0,17.69,33.678L15.5,35.862a4.687,4.687,0,0,0-5.327.885L0,46.927l6.66,6.66L16.841,43.409a4.684,4.684,0,0,0,.884-5.327L19.91,35.9A20.4,20.4,0,1,0,33.178,0Zm10.99,31.4H22.188v-1.57a11,11,0,0,1,10.99-10.99,6.28,6.28,0,1,1,6.28-6.28,6.286,6.286,0,0,1-6.28,6.28,11,11,0,0,1,10.99,10.99Z" fill="#c2dcfa"/>
+      <path id="路径_545" data-name="路径 545" d="M251.2,210a7.863,7.863,0,0,0-7.692,6.28h15.383A7.863,7.863,0,0,0,251.2,210Z" transform="translate(-218.023 -188.021)" fill="#c2dcfa"/>
+      <circle id="椭圆_1620" data-name="椭圆 1620" cx="3.146" cy="3.146" r="3.146" transform="translate(30.218 8.988)" fill="#c2dcfa"/>
+    </g>
+  </g>
+</svg>

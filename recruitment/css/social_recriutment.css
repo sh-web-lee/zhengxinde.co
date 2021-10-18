@@ -3,6 +3,7 @@
     background: url(../images/banner-bg.png) no-repeat center 0px;
     margin-top: 70px;
     overflow: hidden;
+    border-bottom: 1px solid #e5e5e5;
 }
 .recriut-banner-title {
     font: normal normal normal 30px/40px JiangChengYuanTi500;
@@ -84,6 +85,7 @@
     width: 100%;
     margin-top: 20px;
     border: 1px solid #EEF0F2;
+    border-bottom: none;
 }
 .recriut-post table thead {
     line-height: 50px;
@@ -105,7 +107,7 @@
 /* .recriut-post table tbody tr:last-child {
     background-color: #F5F6F7;
 } */
-.recriut-post table tbody tr:not(:last-child) ::after {
+.recriut-post table tbody tr::after {
     content: "";
     position: absolute;
     background-color: #EEF0F2;
@@ -153,7 +155,15 @@
     text-align: center;
 }
 .recriut-post table tbody .post-name {
-    padding-left: 72px;
+    /* padding-left: 72px; */
+    padding-left: 51px;
+}
+.recriut-post table tbody .post-name span {
+    margin-left: 8px;
+}
+.recriut-post table tbody .post-name img {
+    position: relative;
+    top: 4px;
 }
 .recriut-post .recriut-post-pagenation {
     display: flex;

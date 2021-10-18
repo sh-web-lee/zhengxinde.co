@@ -8,7 +8,6 @@
     <link rel="stylesheet" href="./css/send_resume.css">
     <link rel="stylesheet" href="../css/animate.css">
     <link rel="stylesheet" href="../css/global.css">
-    <link rel="stylesheet" href="../css/reset.css">
 </head>
 <body>
     <div class="box">
@@ -96,11 +95,11 @@
                         <div class="submit-resume-content-mes">
                             <div class="mes-name">
                                 <label for="">姓名</label>
-                                <input type="text">
+                                <input type="text" id="nickname">
                             </div>
                             <div class="mes-mail">
                                 <label for="">邮箱</label>
-                                <input type="text">
+                                <input type="text" id="email">
                             </div>
                         </div>
                         <!-- 上传简历 -->
@@ -119,6 +118,18 @@
                         <a href="javascript:void(0);" class="btn-submit-resume">提交简历</a>
                     </div>
                 </form>
+            </div>
+        </section>
+
+        <section class="mask">
+            <div class="suc-submit">
+                <div class="close"><img src="./images/icon-close.svg" alt="" class="fr close_mask"></div>
+                <div class="mask-main sub_prompt">
+                    <img src="./images/success.png" alt="" class="img_success">
+                    <img src="./images/fail.png" alt="" class="img_fail">
+                    <p></p>
+                </div>
+                <a href="./recriut_detail.html" class="return_detail btn_handle"></a>
             </div>
         </section>
 
@@ -162,4 +173,5 @@
 </body>
 </html>
 <script src="../js/jquery-1.11.3.min.js"></script>
+<script src="./js/send_resume.js"></script>
 <script src="../js/global.js"></script>

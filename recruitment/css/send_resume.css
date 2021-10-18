@@ -1,3 +1,6 @@
+.box {
+    position: relative;
+}
 .submit-resume {
     margin-top: 70px;
     background: transparent url('../images/back.png') 0% 0% no-repeat padding-box;
@@ -166,6 +169,61 @@
     background: #FFC013;
 }
 
+
+.mask {
+    display: none;
+}
+.mask_active {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, .6);
+}
+.mask_active .suc-submit {
+    margin: 326px auto 0;
+    width: 320px;
+    height: 240px;
+    background: rgba(255, 255, 255, 1) 0% 0% no-repeat padding-box;
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 8px
+}
+.mask_active .suc-submit .close {
+    padding-top: 15px;
+    padding-right: 15px;
+    overflow: hidden;
+}
+.mask_active .suc-submit .close img {
+    cursor: pointer;
+}
+.mask_active .suc-submit .mask-main {
+    text-align: center;
+    margin-top: 7px;
+}
+.mask_active .suc-submit .mask-main p {
+    margin-top: 17px;
+    font: normal normal normal 18px/24px JiangChengYuanTi500;
+    letter-spacing: 0px;
+    color: #000000;
+}
+.mask_active .suc-submit a {
+    display: block;
+    margin: 31px auto 0;
+    text-align: center;
+    width: 164px;
+    height: 40px;
+    background: #1E95FE 0% 0% no-repeat padding-box;
+    border-radius: 6px;
+    font: normal normal normal 18px/40px JiangChengYuanTi400;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    transition: all .3s;
+}
+.mask_active .suc-submit a:hover {
+    background: #57B1FF 0% 0% no-repeat padding-box;
+}
 @media (max-width:768px) {
     .submit-resume-content .submit-resume-content-post-name-p1 a {
         width: 100px;
@@ -191,9 +249,4 @@
     .submit-resume-content-mes .mes-mail {
         margin: 10px 0 0;
     }
-}
-
-
-
-@media (max-width: 375px) {
 }

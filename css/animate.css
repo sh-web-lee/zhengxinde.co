@@ -9,6 +9,18 @@
         opacity: 1;
     }
 }
+@keyframes showWechat {
+    0% {
+        width: 0;
+        height: 0;
+        top: 42px;
+    }
+    100% {
+        width: 133px;
+        height: 108px;
+        top: -10px;
+    }
+}
 
 @keyframes drop-menu {
     0% {
@@ -28,6 +40,122 @@
     }
     100% {
         top: 10px;
+    }
+}
+
+/* home */
+@keyframes roomIn {
+    0% {
+        opacity: 0;
+        transform: scale(0);
+    }
+    /* 80% {
+        opacity: 1;
+        transform: scale(1.01);
+    } */
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@keyframes fadeInUp {
+    0% {
+        transform: translate3d(0, 0, 0);
+    }
+    100% {
+        transform: translate3d(0, 611px, 0);
+    }
+}
+@keyframes fadeInDown {
+    0% {
+        transform: translate3d(0, 0, 0);
+    }
+    100% {
+        transform: translate3d(0, -400px, 0);
+    }
+}
+@keyframes scaleInBottom {
+    0% {
+        transform: translate3d(0, 0, 0) scale(0);
+        opacity: 0;
+    }
+    100% {
+        transform: translate3d(78px, -46px, 0)  scale(1);
+        opacity: 1;
+    }
+}
+@keyframes scaleInTop {
+    0% {
+        opacity: 0;
+        transform: translate3d(0, 0, 0) scale(0);
+    }
+    100% {
+        opacity: 1;
+        transform: translate3d(-70px, 154px, 0);
+    }
+}
+@keyframes scaleIn2 {
+    0% {
+        opacity: 0;
+        transform: translate3d(0, 0, 0) scale(0);
+    }
+    100% {
+        opacity: 1;
+        transform: translate3d(-60px, -125px, 0) scale(1);
+    }
+}
+@keyframes scaleIn3 {
+    0% {
+        opacity: 0;
+        transform: translate3d(0, 0, 0) scale(0);
+    }
+    100% {
+        opacity: 1;
+        transform: translate3d(60px, 70px, 0) scale(1);
+    }
+}
+@keyframes zoomInLeft {
+    0% {
+        transform: translate3d(-345px, -52px, 0) scale(0);
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+        transform: translate3d(0, 0, 0) scale(1);
+    }
+
+}
+@keyframes zoomInTop {
+    0% {
+        transform: translate3d(0, -156px, 0);
+        opacity: 0;
+    }
+    100% {
+        transform: translate3d(0, 0, 0);
+        opacity: 1;
+    }
+}
+@keyframes jump-effect {
+    0% {
+        transform: translate3d(0, 0, 0);
+    }
+    50% {
+        transform: translate3d(0, -4px, 0);
+    }
+    100% {
+        transform: translate3d(0, 0, 0);
+    }
+}
+@keyframes effect-float {
+    0% {
+        transform: translate3d(0, 0, 0);
+    }
+    50% {
+        transform: translate3d(0, 10px, 0);
+    }
+    100% {
+        transform: translate3d(0, 0, 0);
     }
 }
 /* 滚动至当前屏幕出现动画 */
