@@ -1,3 +1,9 @@
+:root {
+    --card-height:1.44
+}
+
+
+
 .box {
     background: transparent linear-gradient(180deg, #FAFAFA 0%, #FFFFFF 100%) 0% 0% no-repeat padding-box;
 }
@@ -45,6 +51,7 @@
 }
 .colleague-banner .colleague-banner-content dl dd {
     transition: all .5s;
+    /* transform: translateY(-10%); */
     padding: 12px 12px 2.88vh;
     position: relative;
     background-color: #fff;
@@ -157,7 +164,8 @@
     .colleague-banner .colleague-banner-content dl {
         margin: 0 auto 35px;
         height: 400px;
-        width: 274px;
+        /* height: calc(var(--hard-height) * width)px; */
+        width: 100%;
     }
     .photo-wall-content img {
         display: inline-block;

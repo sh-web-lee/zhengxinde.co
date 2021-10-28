@@ -234,6 +234,7 @@ a {
     margin-top: 25px;
 }
 .footer-content .wechat-box {
+    height: 35px;
     padding-left: 18px;
 }
 .footer-law {
@@ -253,20 +254,23 @@ a {
 }
 .showFloat:hover .wechat-code {
     animation: showWechat .3s linear forwards;
-    /* display: block; */
+    display: block;
+}
+.showFloat:hover .default-icon {
+    display: none;
+}
+.showFloat:hover .active-icon {
+    display: block;
 }
 .wechat-code {
-    /* width: 133px;
-    height: 108px; */
-    width: 0;
-    height: 0;
+    width: 133px;
+    height: 108px;
     background: url(../images/newcode-box.png) no-repeat -10px -4px;
     background-size: 116%;
     position: absolute;
-    top: 42px;
+    top: 0;
     left: 58px;
-    /* display: none; */
-    animation: showCode .5s;
+    display: none;
 }
 .wechat-code img {
     display: inline-block;
@@ -276,6 +280,7 @@ a {
     top: -11%;
     left: 7%;
     image-rendering: -webkit-optimize-contrast;
+    animation: showCode .3s linear forwards;
 }
 .mob {
     display: none !important;

@@ -145,10 +145,13 @@
     background-color: #fffdf9;
 }
 .salary-structure .salary-structure-content li:hover h2 {
-    display: none;
+    opacity: 0;
+    transform: translateY(-5px);
 }
 .salary-structure .salary-structure-content li:hover p {
-    display: block;
+    transform: translateY(-5px);
+    opacity: 1;
+
 }
 .salary-structure .salary-structure-content li h2 {
     font: normal normal normal 24px/32px JiangChengYuanTi500;
@@ -156,20 +159,25 @@
     margin-bottom: 9px;
     letter-spacing: 0px;
     color: #494E4E;
+    transition: all .3s;
+    opacity: 1;
 }
 .salary-structure .salary-structure-content li p {
+    position: relative;
+    top: -67px;
     font: normal normal normal 16px/21px JiangChengYuanTi500;
     letter-spacing: 0px;
     color: #999999;
-    display: none;
     margin-top: 44px;
     padding: 0 43px;
+    transition: all .3s;
+    opacity: 0;
 }
 .salary-structure .salary-structure-content li:nth-child(2) p {
     padding: 0 4vw;
 }
 .salary-welfare {
-    background: url(../images/welfare-bg.svg) no-repeat 1px 1px;
+    background: url(../images/welfare-bg.png) no-repeat 1px 1px;
     padding-top: 281px;
     margin-top: -183px;
 }

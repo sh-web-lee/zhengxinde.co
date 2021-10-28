@@ -1,16 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
-    <script type="text/javascript" src="https://api.map.baidu.com/api?v=2.0&&ak=Xao2Glw8hp7usD8GGw8xNMC2ZaahAIuF"></script>
+    <script type="text/javascript"
+        src="https://api.map.baidu.com/api?v=2.0&&ak=Xao2Glw8hp7usD8GGw8xNMC2ZaahAIuF"></script>
     <title>成都正欣德信息技术有限公司</title>
     <link rel="stylesheet" href="./index/css/index.css">
     <link rel="stylesheet" href="./css/animate.css">
     <link rel="stylesheet" href="./css/global.css">
 </head>
+
 <body>
     <div class="box">
         <section class="header">
@@ -107,28 +110,32 @@
                 </div>
             </div>
         </section>
-        
+
         <!-- part 2 vision -->
         <section class="home-vision">
             <div class="container">
                 <div class="home-vision-head">
                     <h1 class="home-vision-title">我们的愿景</h1>
-                    <h2 class="home-vision-subtitle">伟大的产品，卓越的公司----- <em>估值10亿美金以上的独角兽公司</em></br><span>Great product,excellent company---A unicorn company valued Over $1 billion</span></h2>
+                    <h2 class="home-vision-subtitle">伟大的产品，卓越的公司-----
+                        <em>估值10亿美金以上的独角兽公司</em></br><span>Great product,excellent company---A unicorn company valued Over
+                            $1 billion</span></h2>
                 </div>
                 <div class="home-vision-main">
                     <div class="home-vision-item">
                         <h2 class="home-vision-item-title">文化<span>Culture</span></h2>
-                        <h5 class="home-vision-item-content">团队协作，拼搏进取</br><span>Team collaboration,Enterprising</span></h5>
+                        <h5 class="home-vision-item-content">团队协作，拼搏进取</br><span>Team collaboration,Enterprising</span>
+                        </h5>
                     </div>
                     <div class="home-vision-item">
                         <h2 class="home-vision-item-title">核心价值观<span>Core Values</span></h2>
-                        <h5 class="home-vision-item-content">态度，执行力，杜绝办公室政治 </br><span>Attitude,Execution,No office politics</span></h5> 
+                        <h5 class="home-vision-item-content">态度，执行力，杜绝办公室政治 </br><span>Attitude,Execution,No office
+                                politics</span></h5>
                     </div>
                 </div>
             </div>
         </section>
         <!-- vision end -->
-    
+
         <!-- part 3 business -->
         <section class="home-business">
             <div class="container">
@@ -140,7 +147,8 @@
                         </dt>
                         <dd>
                             <h3>PC windows平台</h3>
-                            <p>系统优化软件拥有全球220个国家和地区，</br>超过3.5亿用户的信赖；全球系统类软件排名第2；</br>全球最大下载站下载量排名前5；屡获 PCMag、 CNET以及PCWorld等知名媒体大奖。</p>
+                            <p>系统优化软件拥有全球220个国家和地区，</br>超过3.5亿用户的信赖；全球系统类软件排名第2；</br>全球最大下载站下载量排名前5；屡获 PCMag、
+                                CNET以及PCWorld等知名媒体大奖。</p>
                         </dd>
                     </dl>
                     <dl class="home-business-item">
@@ -158,7 +166,8 @@
                         </dt>
                         <dd>
                             <h3>iOS、Android平台</h3>
-                            <p>成功打造All-in-one的移动端产品，跻身欧美、</br>日韩高端市场。明星产品AMC Security在安卓平台</br>全球下载量1000万+，在44个国家冲入工具类</br>软件榜单Top100,其中欧美四国进入Top10</p> 
+                            <p>成功打造All-in-one的移动端产品，跻身欧美、</br>日韩高端市场。明星产品AMC
+                                Security在安卓平台</br>全球下载量1000万+，在44个国家冲入工具类</br>软件榜单Top100,其中欧美四国进入Top10</p>
                         </dd>
                     </dl>
                 </div>
@@ -206,7 +215,7 @@
                 </div>
             </div>
         </section>
-    
+
         <!-- part4 4 contact -->
         <section class="home-contact">
             <div class="container">
@@ -222,7 +231,7 @@
             </div>
         </section>
         <!-- contact end -->
-    
+
         <!-- footer -->
         <section class="footer">
             <div class="container">
@@ -261,17 +270,18 @@
         </section>
     </div>
 </body>
+
 </html>
 <script src="./js/jquery-1.11.3.min.js"></script>
 <script src="./index/js/index.js"></script>
 <script src="./js/global.js"></script>
-<script data-instruction="baiduMap">    
+<script data-instruction="baiduMap">
     // 百度地图API功能
-	var map = new BMap.Map("map-content");
-	var point = new BMap.Point(104.07442, 30.6218);     // 设置中心点
-	map.centerAndZoom(point, 19);
-	var marker = new BMap.Marker(point);  // 创建标注
-	map.addOverlay(marker);               // 将标注添加到地图中
+    var map = new BMap.Map("map-content");
+    var point = new BMap.Point(104.07442, 30.6218);     // 设置中心点
+    map.centerAndZoom(point, 19);
+    var marker = new BMap.Marker(point);  // 创建标注
+    map.addOverlay(marker);               // 将标注添加到地图中
     map.enableScrollWheelZoom(true); // 开启鼠标滚轮缩放
-	marker.setAnimation(BMAP_ANIMATION_BOUNCE); //跳动的动画
+    marker.setAnimation(BMAP_ANIMATION_BOUNCE); //跳动的动画
 </script>

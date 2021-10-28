@@ -78,6 +78,13 @@
     padding-top: 32.5px;
     display: flex;
     padding-left: 20px;
+    height: 89px;
+    overflow: hidden;
+}
+.submit-resume-content-mes p {
+    color: #d33a31;
+    font: normal normal normal 14px/24px JiangChengYuanTi500;
+    /* display: none; */
 }
 .submit-resume-content-mes label, .upload-resume label, .note label {
     display: block;
@@ -102,12 +109,13 @@
 }
 .upload-resume {
     padding-left: 20px;
-    padding-top: 31px;
+    padding-top: 11px;
     border-bottom: 1px solid #EEf0f2;
     padding-bottom: 33.5px;
 }
 .upload-resume a {
     display: inline-block;
+    position: relative;
     margin-top: 8px;
     margin-bottom: 11px;
     font: normal normal normal 14px/32px JiangChengYuanTi400;
@@ -120,11 +128,31 @@
     border: 1px solid #CCCCCC;
     border-radius: 4px;
 }
+.upload-resume input[type='file'] {
+    cursor: pointer;
+    position: absolute;
+    width: 96px;
+    height: 32px;
+    top: 0;
+    left: 0;
+    opacity: 0;
+}
+.upload-resume b {
+    position: absolute;
+    display: inline-block;
+    font: normal normal normal 14px/32px JiangChengYuanTi400;
+    text-align: center;
+    letter-spacing: 0px;
+    color: #000000;
+    width: 96px;
+    height: 32px;
+    top: 2px;
+    left: 0;
+}
 .upload-resume i {
-    font-style: normal;
     font: normal normal normal 14px/18px JiangChengYuanTi400;
     letter-spacing: 0px;
-    color: #888888;
+    color: #000;
     margin-left: 14px;
 }
 .upload-resume p {
@@ -236,6 +264,7 @@
     }
     .submit-resume-content-mes {
         flex-direction: column;
+        height: auto;
     }
     .submit-resume-content .submit-resume-content-post-name-p2 {
         font-size: 20px;

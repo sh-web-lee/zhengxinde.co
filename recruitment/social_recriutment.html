@@ -91,7 +91,7 @@
                     <div class="recriut-post-table">
                         <table>
                             <thead>
-                                <td style="width: 28%; border-radius: 5px 0 0 0;">岗位名称</td>
+                                <td style="width: 25%; border-radius: 5px 0 0 0;">岗位名称</td>
                                 <td>岗位类别</td>
                                 <td style="width: 21%;">需求人数</td>
                                 <td>发布时间</td>
@@ -229,8 +229,10 @@
 <script src="../js/global.js"></script>
 <script>
     $('.recriut-nav li').click(function() {
-        $(this).addClass('active')
-        $(this).siblings().removeClass('active')
+        $(this).css({ 'background': '#F9B806', 'color': '#fff' })
+        $(this).siblings().css({ 'background': '#fff', 'color': '#000' })
+        // $(this).addClass('active')
+        // $(this).siblings().removeClass('active')
     })
 </script>
 <script data-state="test">

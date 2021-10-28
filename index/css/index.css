@@ -144,7 +144,7 @@
     height: 36px;
     background: #FFB70E 0% 0% no-repeat padding-box;
     border-radius: 20px;
-    font: normal normal normal 18px/36px JiangChengYuanTi;
+    font: normal normal normal 18px/36px JiangChengYuanTi400;
     letter-spacing: 0px;
     color: #FFFFFF;
     margin-top: 5px;
@@ -377,25 +377,19 @@
     padding: 9px 8px 8px 9px;
 }
 .home-contact-apply .home-btn-apply {
-    background: linear-gradient(90deg, #EFAF23 0%, #FFC013 100%) 0% 0% no-repeat padding-box;
-    border-radius: 6px;
     display: block;
+    margin: 73px auto 0;
+    background: linear-gradient(90deg, #EFAF23 0%, #FFC013 100%);
+    border-radius: 6px;
     width: 380px;
-    /* width: 32%; */
     height: 64px;
+    font: normal normal normal 20px/64px JiangChengYuanTi500;
     color: #fff;
-    font: normal normal normal 20px/26px JiangChengYuanTi500;
     letter-spacing: 0px;
     text-align: center;
-    line-height: 64px;
-    margin: 73px auto 0;
-    /* transition: all .3s; */
 }
 .home-contact-apply .home-btn-apply:hover {
-    background: #FFC013 0% 0% no-repeat padding-box;
-}
-.header-active {
-    border-bottom: 1px solid #e5e5e5;
+    background: #FFC013;
 }
 .active-animation {
     animation: effect-float 3s infinite linear !important;

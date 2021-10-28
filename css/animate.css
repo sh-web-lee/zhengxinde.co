@@ -2,23 +2,18 @@
     0% {
         opacity: 0;
     }
-    50% {
-        opacity: .7;
-    }
     100% {
         opacity: 1;
     }
 }
 @keyframes showWechat {
     0% {
-        width: 0;
-        height: 0;
-        top: 42px;
+        background-size: 85%;
+        background-position: 3px 10px;
     }
     100% {
-        width: 133px;
-        height: 108px;
-        top: -10px;
+        background-size: 116%;
+        background-position: -10px -4px;
     }
 }
 

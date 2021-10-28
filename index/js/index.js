@@ -24,9 +24,9 @@ function carousel() {
 $(window).scroll(function() {
     var scrollTop = $(this).scrollTop()
     if (scrollTop > 0) {
-        $('.header').addClass('header-active')
+        $('.header').css({ 'borderBottom': '1px solid #e5e5e5' })
     } else {
-        $('.header').removeClass('header-active')
+        $('.header').css({ 'borderBottom': 'none' })
     }
 })
 

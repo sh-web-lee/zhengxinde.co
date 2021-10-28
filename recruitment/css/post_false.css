@@ -55,3 +55,19 @@
     letter-spacing: 0px;
     color: #067AFF;
 }
+@media (max-width: 768px) {
+    .recriut-banner {
+        height: auto;
+    }
+    .recriut-nav {
+        justify-content: space-around;
+    }
+    .recriut-nav li {
+        width: 100px;
+        height: 45px;
+        line-height: 45px;
+        font-size: 14px;
+        margin-bottom: 36px;
+        margin-left: 0;
+    }
+}

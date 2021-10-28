@@ -38,23 +38,26 @@
 }
 
 .int-detail .int-detail-milestone {
-    display: flex;
-    justify-content: space-around;
     position: relative;
 }
-.int-detail .int-detail-milestone::after {
-    content: "";
-    position: absolute;
-    width: 1200px;
-    height: 1px;
-    background-color: #CCCCCC;
-    bottom: 191px;
+
+.int-detail .int-detail-milestone-word {
+    display: flex;
+    width: 1059px;
+    margin: 21.5px auto 0;
+    justify-content: space-around;
+    font: normal normal normal 16px/28px JiangChengYuanTi500;
+    letter-spacing: 0px;
+    color: #000;
 }
 .int-detail .int-detail-milestone dl {
     flex: 1;
 }
 .int-detail .int-detail-milestone dl dt {
     margin-bottom: 21.5px;
+}
+.int-detail .int-detail-milestone dl dt img {
+    z-index: 10;
 }
 .int-detail .int-detail-milestone dl dd {
     font: normal normal normal 16px/28px JiangChengYuanTi500;
@@ -74,10 +77,9 @@
     /* background-color: #FBFBFB; */
 }
 .sub-banner .container {
-    max-width: 1400px;
+    width: 1400px;
     min-height: 280px;
     background: url(../images/sub-banner-bg.png) no-repeat center center;
-    background-size: 100%;
 }
 
 

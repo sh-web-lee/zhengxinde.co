@@ -65,59 +65,61 @@
         <!-- detail -->
         <section class="submit-resume">
             <div class="container">
-                <form action="" method="post">
-                    <div class="submit-resume-content">
-                        <div class="submit-resume-content-post-name">
-                            <div class="submit-resume-content-post-name-p1">
-                                <span><label for="">发布时间 : </label><i>2021-08-03</i></span>
-                                <a href="./social_recriutment.html" class="return-post-list">返回职位列表</a>
-                            </div>
-                            <div class="submit-resume-content-post-name-p2">
-                                <label for="">岗位名称 : </label>
-                                <span>C++开发工程师</span>
-                            </div>
-                            <div class="submit-resume-content-post-name-p3">
-                                <dl>
-                                    <dt>工作地点：</dt>
-                                    <dd>成都</dd>
-                                </dl>
-                                <dl>
-                                    <dt>岗位类别：</dt>
-                                    <dd>技术研发类</dd>
-                                </dl>
-                                <dl>
-                                    <dt>招聘人数：</dt>
-                                    <dd>1人</dd>
-                                </dl>
-                            </div>
+                <div class="submit-resume-content">
+                    <div class="submit-resume-content-post-name">
+                        <div class="submit-resume-content-post-name-p1">
+                            <span><label for="">发布时间 : </label><i>2021-08-03</i></span>
+                            <a href="./social_recriutment.html" class="return-post-list">返回职位列表</a>
                         </div>
+                        <div class="submit-resume-content-post-name-p2">
+                            <label for="">岗位名称 : </label>
+                            <span>C++开发工程师</span>
+                        </div>
+                        <div class="submit-resume-content-post-name-p3">
+                            <dl>
+                                <dt>工作地点：</dt>
+                                <dd>成都</dd>
+                            </dl>
+                            <dl>
+                                <dt>岗位类别：</dt>
+                                <dd>技术研发类</dd>
+                            </dl>
+                            <dl>
+                                <dt>招聘人数：</dt>
+                                <dd>1人</dd>
+                            </dl>
+                        </div>
+                    </div>
+                    <form action="" method="post">
                         <!-- 姓名邮箱 -->
                         <div class="submit-resume-content-mes">
                             <div class="mes-name">
                                 <label for="">姓名</label>
                                 <input type="text" id="nickname">
+                                <!-- <p class="tips">*此项为必填项</p> -->
                             </div>
                             <div class="mes-mail">
                                 <label for="">邮箱</label>
-                                <input type="text" id="email">
+                                <input type="email" id="email">
+                                <!-- <p>*此项为必填项</p> -->
                             </div>
                         </div>
                         <!-- 上传简历 -->
                         <div class="upload-resume">
                             <label for="">上传简历</label>
-                            <a href="javascript:void(0);" class="check-file">选择文件</a><i>未选择任何文件</i>
+                            <a href="javascript:void(0);" class="check-file" id="upload_file">选择文件
+                                <input type="file" id="resume">
+                            </a><i id="filePath">未选择任何文件</i>
                             <p class="upload-resume-tips">* 你可以通过附件上传简历，文件不要超过2M</p>
                         </div>
                         <!-- 备注 -->
                         <div class="note">
                             <label for="">备注</label>
-                            <!-- <input type="text"> -->
                             <textarea cols="" rows=""></textarea>
                         </div>
-                        
                         <a href="javascript:void(0);" class="btn-submit-resume">提交简历</a>
-                    </div>
-                </form>
+                    </form>
+                </div>
             </div>
         </section>
 
@@ -129,7 +131,7 @@
                     <img src="./images/fail.png" alt="" class="img_fail">
                     <p></p>
                 </div>
-                <a href="./recriut_detail.html" class="return_detail btn_handle"></a>
+                <a href="" class="return_detail btn_handle"></a>
             </div>
         </section>
 
