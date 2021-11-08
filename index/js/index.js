@@ -22,7 +22,7 @@ function carousel() {
 
 // 窗口 scroll 后，顶部导航栏添加下边框
 $(window).scroll(function() {
-    var scrollTop = $(this).scrollTop()
+    var scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
     if (scrollTop > 0) {
         $('.header').css({ 'borderBottom': '1px solid #e5e5e5' })
     } else {
@@ -36,4 +36,12 @@ $(window).load(function() {
     setTimeout(() => {
         $('.home-banner-icon2, .home-banner-icon1').addClass('active-animation')
     }, 4000);
+})
+
+// scroll down翻页至第二屏
+$('#scroll-down').click(function() {
+    window.scrollTo({
+        top: document.documentElement.clientHeight,
+        behavior: 'smooth'
+    })
 })

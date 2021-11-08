@@ -153,6 +153,19 @@
         transform: translate3d(0, 0, 0);
     }
 }
+@keyframes scroll-jump {
+    0% {
+        top: 23px;
+    }
+    50% {
+        top: 15px;
+    }
+    100% {
+        top: 23px;
+    }
+
+}
+
 /* 滚动至当前屏幕出现动画 */
 .fadeInUp {
     /* transition-property: all; */

@@ -163,7 +163,7 @@
     }
     .colleague-banner .colleague-banner-content dl {
         margin: 0 auto 35px;
-        height: 400px;
+        height: 112vw;
         /* height: calc(var(--hard-height) * width)px; */
         width: 100%;
     }
