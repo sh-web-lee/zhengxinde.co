@@ -12,7 +12,9 @@
     margin-bottom: 2px;
     height: 100%;
 }
-.home-banner>img {
+.home-banner .container>img {
+    position: relative;
+    top: 4px;
     display: inline-block;
     image-rendering: -webkit-optimize-contrast;
     image-rendering: -o-crisp-edges;
@@ -96,16 +98,18 @@
 } */
 
 .home-banner .home-banner-main {
+    position: relative;
+    top: -44px;
     margin: 0 auto;
 }
 .home-banner .home-banner-main ul {
     display: flex;
-    padding: 52px 0 56px 0;
+    padding: 52px 0 56px 88px;
 }
 .home-banner .home-banner-main ul li {
     display: flex;
     position: relative;
-    margin-right: 95px;
+    margin-right: 59px;
 }
 .home-banner .home-banner-main ul li img {
     position: relative;
