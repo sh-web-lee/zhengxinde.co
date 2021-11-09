@@ -155,13 +155,13 @@
 }
 @keyframes scroll-jump {
     0% {
-        top: 23px;
+        top: 21px;
     }
     50% {
-        top: 15px;
+        top: 17px;
     }
     100% {
-        top: 23px;
+        top: 21px;
     }
 
 }
