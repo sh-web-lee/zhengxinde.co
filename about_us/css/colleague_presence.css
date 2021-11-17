@@ -146,7 +146,11 @@
     margin-top: 6.93vh;
     margin-bottom: 6.7vh;
 }
-
+.photo-wall-content a {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
 
 
 

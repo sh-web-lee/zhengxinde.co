@@ -1,0 +1,214 @@
+.al-main {
+    margin-top: 70px;
+    padding: 50px 0 68px;
+    background: url('../images/album-bg.png') center center no-repeat;
+    background-size: cover;
+}
+.al-main .container {
+    width: 1120px;
+}
+.al-title {
+    height: 60px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 1px 2px #0000001A;
+    border-radius: 8px;
+}
+.al-title p {
+    position: relative;
+    font: normal normal normal 22px/60px JiangChengYuanTi500;
+    color: #000000;
+    margin-left: 53px;
+}
+.al-title p::before {
+    position: absolute;
+    content: "";
+    top: 20px;
+    left: -8px;
+    width: 4px;
+    height: 20px;
+    background: #095FE1 0% 0% no-repeat padding-box;
+}
+.al-photo {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+.al-photo .al-left-photo {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.al-photo .al-left-photo .al-left-item {
+    width: 248px;
+    height: 184px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 3px 7px #00000038;
+    padding: 8px 10px 7px;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+    transition: all.3s;
+    cursor: pointer;
+}
+.al-photo .al-left-photo .al-left-item:hover {
+    transform: translateY(-6px);
+    animation: flash-bg .2s linear;
+    box-shadow: 0px 5px 25px #00000038;
+}
+.al-photo .al-left-photo .al-left-item a {
+    position: relative;
+    display: block;
+    height: 100%;
+}
+.al-photo .al-left-photo .al-left-item img {
+    width: 100%;
+    image-rendering: -webkit-optimize-contrast;
+}
+.al-photo .al-left-photo .al-left-item p {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-indent: 16px;
+    font: normal normal normal 18px/37px JiangChengYuanTi500;
+    color: #333333;
+    background: url('/about_us/images/opa75.png');
+}
+
+
+
+
+
+
+
+.al-photo .al-right-photo {
+    display: flex;
+    flex-direction: column;
+    width: 788px;
+}
+.al-photo .al-right-photo .show {
+    position: relative;
+    text-align: center;
+    /* width: 100%; */
+    height: 480px;
+    overflow: hidden;
+}
+.al-controls {
+    display: none;
+}
+.al-photo .al-right-photo .show .ad-image img {
+    width: 100%;
+    image-rendering: -webkit-optimize-contrast;
+}
+.al-photo .al-right-photo .show p {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: left;
+    font: normal normal normal 18px/50px JiangChengYuanTi500;
+    text-indent: 28px;
+    color: #000;
+    background: url('/about_us/images/opa75.png');
+}
+.al-photo .al-right-photo .show .p-shadow {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 50px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    opacity: 0.6;
+}
+.al-photo .al-right-photo .show>div {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 8%;
+    cursor: pointer;
+}
+.switch {
+    opacity: 0;
+    transition: opacity .3s;
+}
+.show:hover .switch {
+    opacity: 1;
+}
+.al-photo .al-right-photo .show .show-prev {
+    left: 0;
+}
+.al-photo .al-right-photo .show .show-prev .cl_shadow {
+    right: 0;
+}
+.al-photo .al-right-photo .show .show-next {
+    right: 0;
+}
+.al-photo .al-right-photo .show .show-next .cl_shadow {
+    left: 0;
+}
+.al-photo .al-right-photo .show>div .cl_shadow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background: url('/about_us/images/opa75.png');
+}
+.al-photo .al-right-photo .show .switch img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate3D(-50%, -50%, 0);
+    width: 30px;
+}
+.al-photo .al-right-photo .show .show-prev img {
+    left: 22px;
+}
+.al-photo .al-right-photo .show .show-next img {
+    right: 22px;
+}
+.al-photo .al-right-photo .carousel {
+    display: flex;
+    margin-top: 30px;
+    width: 100%;
+    height: 70px;
+}
+.carousel .carousel-content {
+    width: 748px;
+    height: 70px;
+    overflow: hidden;
+    margin: 0 12px;
+}
+.carousel .carousel-content ul {
+    position: relative;
+    display: flex;
+}
+.carousel .carousel-content ul li {
+    height: 70px;
+    margin-right: 10px;
+}
+.carousel .carousel-content ul li a {
+    display: block;
+    height: 100%;
+}
+.carousel .carousel-content ul li img {
+    height: 100%;
+    cursor: pointer;
+    image-rendering: -webkit-optimize-contrast;
+}
+.carousel .arrow_hover {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+.al-preloads {
+    display: none;
+    /* position: absolute;
+    left: -9999px;
+    top: -9999px; */
+}
+.al-loader {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
