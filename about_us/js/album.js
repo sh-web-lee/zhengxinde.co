@@ -445,61 +445,61 @@ $(function() {
             var images = [
                 {
                     id: 0,
-                    url: '/about_us/images/al-show.png',
+                    url: './images/al-show.png',
                     title: '快乐工作',
                     description: '快乐工作'
                 },
                 {
                     id: 1,
-                    url: '/about_us/images/photowall1.png',
+                    url: './images/photowall1.png',
                     title: '快乐工作',
                     description: '快乐工作'
                 },
                 {
                     id: 2,
-                    url: '/about_us/images/photowall2.png',
+                    url: './images/photowall2.png',
                     title: '快乐工作',
                     description: '快乐工作'
                 },
                 {
                     id: 3,
-                    url: '/about_us/images/photowall3.png',
+                    url: './images/photowall3.png',
                     title: '快乐工作',
                     description: '快乐工作'
                 },
                 {
                     id: 4,
-                    url: '/about_us/images/photowall4.png',
+                    url: './images/photowall4.png',
                     title: '快乐工作',
                     description: '快乐工作'
                 },
                 {
                     id: 5,
-                    url: '/about_us/images/photowall5.png',
+                    url: './images/photowall5.png',
                     title: '快乐工作',
                     description: '快乐工作'
                 },
                 {
                     id: 6,
-                    url: '/about_us/images/photowall6.png',
+                    url: './images/photowall6.png',
                     title: '快乐工作',
                     description: '快乐工作'
                 },
                 {
                     id: 7,
-                    url: '/about_us/images/photowall7.png',
+                    url: './images/photowall7.png',
                     title: '快乐工作',
                     description: '快乐工作'
                 },
                 {
                     id: 8,
-                    url: '/about_us/images/photowall8.png',
+                    url: './images/photowall8.png',
                     title: '快乐工作',
                     description: '快乐工作'
                 },
                 {
                     id: 9,
-                    url: '/about_us/images/photowall9.png',
+                    url: './images/photowall9.png',
                     title: '快乐工作',
                     description: '快乐工作'
                 }
