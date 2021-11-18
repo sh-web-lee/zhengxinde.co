@@ -1,7 +1,8 @@
 $(function() {
     $.fn.album = function(options) {
         var defaults = {
-            loader_image: '/about_us/images/loader.gif',
+            loader_image: './images/loader.gif',
+            url: null,  //  url
             start_at_index: 0,
             update_window_hash: true,
             description_wrapper: false,
@@ -177,6 +178,7 @@ $(function() {
         nav_display_width: 0,   // 滚动相册容器的宽度 包含按钮
         scroll_jump: 0,
         thumbs_wrapper: null,   // 滚动相册外层容器
+        galleryBar: null,   //  左侧分类照片展示
         thumbs_wrapper_width: 0,    // 滚动相册宽度
         images: [],     // 滚动相册照片
         thumb_opacity: 0.7,     // 照片透明度
@@ -203,14 +205,198 @@ $(function() {
             onStart: false,
             onStop: false
         },
+
+        galleryImages: [
+            [{
+                id: 0,
+                url: './images/photowall25.png',
+                title: '公司环境',
+                description: '公司环境'
+            },
+            {
+                id: 1,
+                url: './images/photowall001.jpg',
+                title: '公司环境',
+                description: '公司环境'
+            },
+            {
+                id: 2,
+                url: './images/al-show.png',
+                title: '公司环境',
+                description: '公司环境'
+            },
+            {
+                id: 3,
+                url: './images/photowall3.png',
+                title: '公司环境',
+                description: '公司环境'
+            },
+            {
+                id: 4,
+                url: './images/photowall4.png',
+                title: '公司环境',
+                description: '公司环境'
+            },
+            {
+                id: 5,
+                url: './images/photowall5.png',
+                title: '公司环境',
+                description: '公司环境'
+            },
+            {
+                id: 6,
+                url: './images/photowall6.png',
+                title: '公司环境',
+                description: '公司环境'
+            },
+            {
+                id: 7,
+                url: './images/photowall7.png',
+                title: '公司环境',
+                description: '公司环境'
+            },
+            {
+                id: 8,
+                url: './images/photowall8.png',
+                title: '公司环境',
+                description: '公司环境'
+            },
+            {
+                id: 9,
+                url: './images/photowall9.png',
+                title: '公司环境',
+                description: '公司环境'
+            }],
+            [{
+                id: 0,
+                url: './images/photowall24.png',
+                title: '快乐工作',
+                description: '快乐工作'
+            },
+            {
+                id: 1,
+                url: './images/al-show.png',
+                title: '快乐工作',
+                description: '快乐工作'
+            },
+            {
+                id: 2,
+                url: './images/photowall11.png',
+                title: '快乐工作',
+                description: '快乐工作'
+            },
+            {
+                id: 3,
+                url: './images/photowall10.png',
+                title: '快乐工作',
+                description: '快乐工作'
+            },
+            {
+                id: 4,
+                url: './images/photowall9.png',
+                title: '快乐工作',
+                description: '快乐工作'
+            },
+            {
+                id: 5,
+                url: './images/photowall8.png',
+                title: '快乐工作',
+                description: '快乐工作'
+            },
+            {
+                id: 6,
+                url: './images/photowall7.png',
+                title: '快乐工作',
+                description: '快乐工作'
+            },
+            {
+                id: 7,
+                url: './images/photowall6.png',
+                title: '快乐工作',
+                description: '快乐工作'
+            },
+            {
+                id: 8,
+                url: './images/photowall5.png',
+                title: '快乐工作',
+                description: '快乐工作'
+            },
+            {
+                id: 9,
+                url: './images/photowall4.png',
+                title: '快乐工作',
+                description: '快乐工作'
+            }],
+            [{
+                id: 0,
+                url: './images/photowall20.png',
+                title: 'On the way',
+                description: 'On the way'
+            },
+            {
+                id: 1,
+                url: './images/photowall9.png',
+                title: 'On the way',
+                description: 'On the way'
+            },
+            {
+                id: 2,
+                url: './images/photowall15.png',
+                title: 'On the way',
+                description: 'On the way'
+            },
+            {
+                id: 3,
+                url: './images/photowall16.png',
+                title: 'On the way',
+                description: 'On the way'
+            },
+            {
+                id: 4,
+                url: './images/photowall17.png',
+                title: 'On the way',
+                description: 'On the way'
+            },
+            {
+                id: 5,
+                url: './images/al-show.png',
+                title: 'On the way',
+                description: 'On the way'
+            },
+            {
+                id: 6,
+                url: './images/photowall19.png',
+                title: 'On the way',
+                description: 'On the way'
+            },
+            {
+                id: 7,
+                url: './images/photowall15.png',
+                title: 'On the way',
+                description: 'On the way'
+            },
+            {
+                id: 8,
+                url: './images/photowall8.png',
+                title: 'On the way',
+                description: 'On the way'
+            },
+            {
+                id: 9,
+                url: './images/photowall9.png',
+                title: 'On the way',
+                description: 'On the way'
+            }],
+        ],    //   所有照片
         
         init: function(wrapper, settings) {
             var context = this
             this.settings = settings
             this.wrapper = $(wrapper)
             this.setupElements()
-            this.getImages()
             this.setupAnimations()
+            this.initGalleryBar()
+            this.judgeUrlParam()
             if (this.settings.width) {
                 this.image_wrapper_width = this.settings.width
                 this.image_wrapper.width(this.settings.width)
@@ -275,6 +461,7 @@ $(function() {
         },
         setupElements: function() {
             this.nav = $('.carousel')
+            this.galleryBar = $('.al-left-photo')
             this.s_show_album = $('.show')
             this.image_wrapper = this.wrapper.find('.show')
             this.image_wrapper.empty()
@@ -288,6 +475,7 @@ $(function() {
             this.loader.hide()
             $(document.body).append(this.preloads)
         },
+        // 加载图片
         loading: function(bool) {
             if (bool) {
                 this.loader.show()
@@ -323,7 +511,6 @@ $(function() {
                 context._initLink(link)
                 context.images[i] = context._createImageData(link, image_src)
             })
-            console.log(this.images)
             var inter = setInterval(function() {
                 if (thumb_count == thumbs_loaded) {
                     context._setThumbListWidth(context.thumbs_wrapper_width)
@@ -358,7 +545,7 @@ $(function() {
                 return false
             }).hover(function() {
                 if (!$(this).is('.ad-active')) {
-                    $(this).find('img').fadeTo(300, 1)
+                    $(this).find('img').fadeTo(300, context.settings.thumb_opacity)
                 }
                 context.preloadImage(link.data("ad-i"))
             })
@@ -403,6 +590,7 @@ $(function() {
                 
             })
         },
+        // 获取 url hash 值中的al-image-， 对应照片 id
         getIndexFromHash: function() {
             if (window.location.hash && window.location.hash.indexOf('#al-image-') === 0) {
                 var id = window.location.hash.replace(/^#al-image-/g, '')
@@ -440,72 +628,13 @@ $(function() {
                 this.removeImage(i)
             }
         },
-        // ajax请求照片数据
-        getImages: function() {
-            var images = [
-                {
-                    id: 0,
-                    url: './images/al-show.png',
-                    title: '快乐工作',
-                    description: '快乐工作'
-                },
-                {
-                    id: 1,
-                    url: './images/photowall1.png',
-                    title: '快乐工作',
-                    description: '快乐工作'
-                },
-                {
-                    id: 2,
-                    url: './images/photowall2.png',
-                    title: '快乐工作',
-                    description: '快乐工作'
-                },
-                {
-                    id: 3,
-                    url: './images/photowall3.png',
-                    title: '快乐工作',
-                    description: '快乐工作'
-                },
-                {
-                    id: 4,
-                    url: './images/photowall4.png',
-                    title: '快乐工作',
-                    description: '快乐工作'
-                },
-                {
-                    id: 5,
-                    url: './images/photowall5.png',
-                    title: '快乐工作',
-                    description: '快乐工作'
-                },
-                {
-                    id: 6,
-                    url: './images/photowall6.png',
-                    title: '快乐工作',
-                    description: '快乐工作'
-                },
-                {
-                    id: 7,
-                    url: './images/photowall7.png',
-                    title: '快乐工作',
-                    description: '快乐工作'
-                },
-                {
-                    id: 8,
-                    url: './images/photowall8.png',
-                    title: '快乐工作',
-                    description: '快乐工作'
-                },
-                {
-                    id: 9,
-                    url: './images/photowall9.png',
-                    title: '快乐工作',
-                    description: '快乐工作'
+        //  根据 url 参数 id 请求照片--后期修改为 ajax请求
+        getImages: function(id) {
+            var images = this.galleryImages
+            for (var i = 0; i < images.length; i ++) {
+                if (id == i + 1 && images[i] && images.length) {
+                    this.addImage(images[i])
                 }
-            ]
-            if (images && images.length) {
-                this.addImage(images)
             }
         },
         // 照片添加到页面中     滚动相册
@@ -521,7 +650,6 @@ $(function() {
             var context = this
             var link = li.find("a")
             var thumb = link.find("img")
-            console.log(this.settings)
             thumb.css('opacity', this.settings.thumb_opacity)
             this.whenImageLoaded(thumb[0], function() {
                 var thumb_width = thumb[0].parentNode.parentNode.offsetWidth
@@ -563,7 +691,6 @@ $(function() {
         initNextAndPrev: function() {
             var context = this
             var index = context.getIndexFromHash()
-            console.log(index)
             // 相册按钮 show
             this.next_link = $('<div class="switch show-prev"><div class="cl_shadow"><img src="./images/icon_left.svg" alt=""></div></div>')
             this.prev_link = $('<div class="switch show-next"><div class="cl_shadow"><img src="./images/icon_right.svg" alt=""></div></div>')
@@ -578,6 +705,16 @@ $(function() {
                     context.slideshow.stop()
                 }
             })
+        },
+        //  添加左侧分类照片栏照片
+        initGalleryBar: function() {
+            var images = this.galleryImages
+            if (images && images.length) {
+                for (var i = 0; i < images.length; i ++) {
+                    var div = '<div class="al-left-item" data-title="' + images[i][0].title + '"><a href="?id=' + (i + 1) + '"><img src="' + images[i][0].url + '" alt="' + images[i][0].title + '"><p>' + images[i][0].title + '</p></a></div>'
+                    this.galleryBar.append(div)
+                }
+            }
         },
         // 初始化滚动相册
         initBackAndForward: function() {
@@ -636,7 +773,6 @@ $(function() {
                 if (this.current_index == 0) {
                     this.prev_link.hide()
                 }
-                
             }
             if (this.settings.update_window_hash) {
                 var thumb_link = this.images[this.current_index].thumb_link
@@ -645,10 +781,10 @@ $(function() {
                 } else {
                     window.location.hash = "#al-image-" + this.current_index
                 }
-                
             }
             this.fireCallback(this.settings.callbacks.afterImageVisible)
         },
+        // 设置展示相册容器 al-image 宽高
         _getContainedImageSize: function(image_width, image_height) {
             if (image_height > this.image_wrapper_height) {
                 var ratio = image_width / image_height
@@ -665,6 +801,7 @@ $(function() {
                 height: image_height
             }
         },
+        // 设置展示照片的位置  绝对定位
         _centerImage: function(img_container, image_width, image_height) {
             img_container.css('top', '0px')
             if (image_height < this.image_wrapper_height) {
@@ -836,7 +973,6 @@ $(function() {
                     i++
                     context.preloadImage(i, preloadNext)
                 }
-                
             }
             context.preloadImage(i, preloadNext)
         },
@@ -898,7 +1034,7 @@ $(function() {
             this.thumbs_wrapper.find('.ad-active').removeClass('ad-active')
             thumb.addClass('ad-active')
             if (this.settings.thumb_opacity < 1) {
-                this.thumbs_wrapper.find('a:not(.ad-active) img').fadeTo(300, 1)
+                this.thumbs_wrapper.find('a:not(.ad-active) img').fadeTo(300, this.settings.thumb_opacity)
                 thumb.find('img').fadeTo(300, 1)
             }
             var left = thumb[0].parentNode.offsetLeft
@@ -911,6 +1047,14 @@ $(function() {
             if ($.isFunction(fn)) {
                 fn.call(this)
             }
+        },
+        // 判断 url 参数 id, 获取照片，如果没有参数 id， 则默认加载 id = 1
+        judgeUrlParam: function() {
+            var id = 1
+            if (window.location.search && window.location.search.indexOf('id') === 1) {
+                id = window.location.search.slice('4')
+            }
+            this.getImages(id)
         }
     }
     function AlbumSlideshow(nextimage_callback, settings) {

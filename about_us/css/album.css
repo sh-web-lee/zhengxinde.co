@@ -58,9 +58,10 @@
     position: relative;
     display: block;
     height: 100%;
+    overflow: hidden;
 }
 .al-photo .al-left-photo .al-left-item img {
-    width: 100%;
+    height: 100%;
     image-rendering: -webkit-optimize-contrast;
 }
 .al-photo .al-left-photo .al-left-item p {
@@ -71,7 +72,7 @@
     text-indent: 16px;
     font: normal normal normal 18px/37px JiangChengYuanTi500;
     color: #333333;
-    background: url('/about_us/images/opa75.png');
+    background: url('../images/opa75.png');
 }
 
 
@@ -108,7 +109,7 @@
     font: normal normal normal 18px/50px JiangChengYuanTi500;
     text-indent: 28px;
     color: #000;
-    background: url('/about_us/images/opa75.png');
+    background: url('../images/opa75.png');
 }
 .al-photo .al-right-photo .show .p-shadow {
     position: absolute;
@@ -119,7 +120,10 @@
     background: #FFFFFF 0% 0% no-repeat padding-box;
     opacity: 0.6;
 }
-.al-photo .al-right-photo .show>div {
+.al-photo .al-right-photo .show .al-image {
+    position: absolute;
+}
+.al-photo .al-right-photo .show .switch {
     position: absolute;
     top: 0;
     height: 100%;
@@ -152,14 +156,15 @@
     width: 48px;
     height: 48px;
     border-radius: 50%;
-    background: url('/about_us/images/opa75.png');
+    /* background: url('../images/opa75.png'); */
+    background-color: rgba(0, 0, 0, 0.36);
 }
 .al-photo .al-right-photo .show .switch img {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate3D(-50%, -50%, 0);
-    width: 30px;
+    width: 20px;
 }
 .al-photo .al-right-photo .show .show-prev img {
     left: 22px;
