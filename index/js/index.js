@@ -1,47 +1,58 @@
 $(function() {
-    var carouselTimer = setInterval(() => { carousel() }, 4000);
-
-    // 鼠标控制动画滚动
-    // $('.photo-wall-lists').mouseover(function() {
-    //     clearInterval(carouselTimer)
-    // })
-    // $('.photo-wall-lists').mouseleave(function() {
-    //     carouselTimer = setInterval(() => { carousel() }, 4000);
-    // })
-})
-
-
-// 照片墙滚动
-function carousel() {
-    $('.photo-wall-lists').stop(true, true).animate({marginLeft: -1905}, 'slow', function() {
-        $('.photo-wall-lists').css('marginLeft', '0')
-        $('.photo-wall-lists').find('div:first').appendTo($('.photo-wall-lists'))
-    })
-}
-
-
-// 窗口 scroll 后，顶部导航栏添加下边框
-$(window).scroll(function() {
-    var scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
-    if (scrollTop > 0) {
-        $('.header').css({ 'borderBottom': '1px solid #e5e5e5' })
-    } else {
-        $('.header').css({ 'borderBottom': 'none' })
+    $.fn.legend = function() {
+        var legends = new Legend()
+        return legends
     }
-})
+    function Legend() {
+        this.init()
+    }
+    Legend.prototype = {
+        animation_speed: 4000,  //  照片墙滚动速度
+        gallery_list: null,     //  照片墙ul
+        carouselTimer: null,    //  定时器
+        header: null,       //  section header
+        scroll_button: false,   // 翻至第二屏按钮
+        init: function() {
+            this.createElements()
+            carouselTimer = setInterval(() => { this.carousel() }, this.animation_speed);
+            this.addBorder()
+            this.scrollPage()
+        },
+        createElements: function() {
+            this.gallery_list = $('.photo-wall-lists')
+            this.header = $('.header')
+            this.scroll_button = $('#scroll-down')
+        },
+        // 照片轮播
+        carousel: function() {
+            var context = this
+            this.gallery_list.stop(true, true).animate({marginLeft: -1905}, 'slow', function() {
+                context.gallery_list.css('marginLeft', '0')
+                context.gallery_list.find('div:first').appendTo(context.gallery_list)
+            })
 
-
-// banner 屏初始动画完成后，添加跳动新动画,覆盖旧动画特效
-$(window).load(function() {
-    setTimeout(() => {
-        $('.home-banner-icon2, .home-banner-icon1').addClass('active-animation')
-    }, 4000);
-})
-
-// scroll down翻页至第二屏
-$('#scroll-down').click(function() {
-    window.scrollTo({
-        top: document.documentElement.clientHeight,
-        behavior: 'smooth'
-    })
+        },
+        // 窗口 scroll 后，顶部导航栏添加下边框
+        addBorder: function() {
+            var context = this
+            $(window).scroll(function() {
+                var scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
+                if (scrollTop > 0) {
+                    context.header.css({ 'borderBottom': '1px solid #e5e5e5' })
+                } else {
+                    context.header.css({ 'borderBottom': 'none' })
+                }
+            })
+        },
+        // 点击scroll-dowm 按钮，翻至第二屏
+        scrollPage: function() {
+            this.scroll_button.click(function() {
+                window.scrollTo({
+                    top: document.documentElement.clientHeight,
+                    behavior: 'smooth'
+                })
+            })
+        }
+    }
+    $.fn.legend()
 })
