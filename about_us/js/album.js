@@ -182,6 +182,8 @@ $(function() {
         thumbs_wrapper_width: 0,    // 滚动相册宽度
         images: [],     // 滚动相册照片
         thumb_opacity: 0.7,     // 照片透明度
+        page_title: null,   //  封面标题
+        page_title_wrapper: null,   //  封面标题容器div
         in_transition: false,   // 
         image_wrapper_width: 0,
         image_wrapper_height: 0,
@@ -397,6 +399,7 @@ $(function() {
             this.setupAnimations()
             this.initGalleryBar()
             this.judgeUrlParam()
+            this.bindPageTitle()
             if (this.settings.width) {
                 this.image_wrapper_width = this.settings.width
                 this.image_wrapper.width(this.settings.width)
@@ -459,6 +462,7 @@ $(function() {
                 'none': NoneAnimation
             }
         },
+        // 初始化 elements
         setupElements: function() {
             this.nav = $('.carousel')
             this.galleryBar = $('.al-left-photo')
@@ -474,6 +478,7 @@ $(function() {
             this.preloads = $('<div class="al-preloads"></div>')
             this.loader.hide()
             $(document.body).append(this.preloads)
+            this.page_title_wrapper = $('.al-title')
         },
         // 加载图片
         loading: function(bool) {
@@ -628,7 +633,7 @@ $(function() {
                 this.removeImage(i)
             }
         },
-        //  根据 url 参数 id 请求照片--后期修改为 ajax请求
+        //  根据 url 参数 id 请求展示照片--后期修改为 ajax请求
         getImages: function(id) {
             var images = this.galleryImages
             for (var i = 0; i < images.length; i ++) {
@@ -1055,6 +1060,14 @@ $(function() {
                 id = window.location.search.slice('4')
             }
             this.getImages(id)
+        },
+        // 绑定相册 title
+        bindPageTitle: function() {
+            if (this.images != 'undefined' && this.images.length) {
+                this.page_title = this.images[0].title
+                var p = '<p>' + this.page_title + '</p>'
+                this.page_title_wrapper.append(p)
+            }
         }
     }
     function AlbumSlideshow(nextimage_callback, settings) {
@@ -1175,7 +1188,5 @@ $(function() {
             
         }
     }
-    
-    // var albums = new Album()
     $.fn.album()
 })

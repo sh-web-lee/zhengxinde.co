@@ -12,18 +12,19 @@
     background: #FFFFFF 0% 0% no-repeat padding-box;
     box-shadow: 0px 1px 2px #0000001A;
     border-radius: 8px;
+    padding-left: 53px;
 }
 .al-title p {
     position: relative;
-    font: normal normal normal 22px/60px JiangChengYuanTi500;
+    font: normal normal normal 22px/62px JiangChengYuanTi500;
     color: #000000;
-    margin-left: 53px;
+    animation: wordfadeInUp .5s linear forwards;
 }
-.al-title p::before {
+.al-title::before {
     position: absolute;
     content: "";
     top: 20px;
-    left: -8px;
+    left: 41px;
     width: 4px;
     height: 20px;
     background: #095FE1 0% 0% no-repeat padding-box;
