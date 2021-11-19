@@ -837,6 +837,7 @@ $(function() {
             return desc
         },
         showImage: function(index, callback) {
+            console.log(this.current_index, index)
             var context = this
             if (this.images[index] && !this.in_transition && index != this.current_index) {
                 var image = this.images[index]
