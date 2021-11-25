@@ -168,12 +168,23 @@
 /* album */
 @keyframes wordfadeInUp {
     0% {
-        transform: translate3d(0, 10px, 0);
+        transform: translate3d(0, 5px, 0);
         opacity: 0;
     }
     100% {
         transform: translate3d(0, 0, 0);
         opacity: 1;
+    }
+}
+@keyframes skip-icon {
+    0% {
+        top: 1px;
+    }
+    50% {
+        top: 7px;
+    }
+    100% {
+        top: 1px;
     }
 }
 /* 滚动至当前屏幕出现动画 */

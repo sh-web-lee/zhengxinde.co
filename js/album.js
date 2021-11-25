@@ -211,181 +211,181 @@ $(function() {
         galleryImages: [
             [{
                 id: 0,
-                url: './images/photowall25.png',
+                url: '../images/aboutus/photowall25.png',
                 title: '公司环境',
                 description: '公司环境'
             },
             {
                 id: 1,
-                url: './images/photowall001.jpg',
+                url: '../images/aboutus/photowall001.jpg',
                 title: '公司环境',
                 description: '公司环境'
             },
             {
                 id: 2,
-                url: './images/al-show.png',
+                url: '../images/aboutus/al-show.png',
                 title: '公司环境',
                 description: '公司环境'
             },
             {
                 id: 3,
-                url: './images/photowall3.png',
+                url: '../images/aboutus/photowall3.png',
                 title: '公司环境',
                 description: '公司环境'
             },
             {
                 id: 4,
-                url: './images/photowall4.png',
+                url: '../images/aboutus/photowall4.png',
                 title: '公司环境',
                 description: '公司环境'
             },
             {
                 id: 5,
-                url: './images/photowall5.png',
+                url: '../images/aboutus/photowall5.png',
                 title: '公司环境',
                 description: '公司环境'
             },
             {
                 id: 6,
-                url: './images/photowall6.png',
+                url: '../images/aboutus/photowall6.png',
                 title: '公司环境',
                 description: '公司环境'
             },
             {
                 id: 7,
-                url: './images/photowall7.png',
+                url: '../images/aboutus/photowall7.png',
                 title: '公司环境',
                 description: '公司环境'
             },
             {
                 id: 8,
-                url: './images/photowall8.png',
+                url: '../images/aboutus/photowall8.png',
                 title: '公司环境',
                 description: '公司环境'
             },
             {
                 id: 9,
-                url: './images/photowall9.png',
+                url: '../images/aboutus/photowall9.png',
                 title: '公司环境',
                 description: '公司环境'
             }],
             [{
                 id: 0,
-                url: './images/photowall24.png',
+                url: '../images/aboutus/photowall24.png',
                 title: '快乐工作',
                 description: '快乐工作'
             },
             {
                 id: 1,
-                url: './images/al-show.png',
+                url: '../images/aboutus/al-show.png',
                 title: '快乐工作',
                 description: '快乐工作'
             },
             {
                 id: 2,
-                url: './images/photowall11.png',
+                url: '../images/aboutus/photowall11.png',
                 title: '快乐工作',
                 description: '快乐工作'
             },
             {
                 id: 3,
-                url: './images/photowall10.png',
+                url: '../images/aboutus/photowall10.png',
                 title: '快乐工作',
                 description: '快乐工作'
             },
             {
                 id: 4,
-                url: './images/photowall9.png',
+                url: '../images/aboutus/photowall9.png',
                 title: '快乐工作',
                 description: '快乐工作'
             },
             {
                 id: 5,
-                url: './images/photowall8.png',
+                url: '../images/aboutus/photowall8.png',
                 title: '快乐工作',
                 description: '快乐工作'
             },
             {
                 id: 6,
-                url: './images/photowall7.png',
+                url: '../images/aboutus/photowall7.png',
                 title: '快乐工作',
                 description: '快乐工作'
             },
             {
                 id: 7,
-                url: './images/photowall6.png',
+                url: '../images/aboutus/photowall6.png',
                 title: '快乐工作',
                 description: '快乐工作'
             },
             {
                 id: 8,
-                url: './images/photowall5.png',
+                url: '../images/aboutus/photowall5.png',
                 title: '快乐工作',
                 description: '快乐工作'
             },
             {
                 id: 9,
-                url: './images/photowall4.png',
+                url: '../images/aboutus/photowall4.png',
                 title: '快乐工作',
                 description: '快乐工作'
             }],
             [{
                 id: 0,
-                url: './images/photowall20.png',
+                url: '../images/aboutus/photowall20.png',
                 title: 'On the way',
                 description: 'On the way'
             },
             {
                 id: 1,
-                url: './images/photowall9.png',
+                url: '../images/aboutus/photowall9.png',
                 title: 'On the way',
                 description: 'On the way'
             },
             {
                 id: 2,
-                url: './images/photowall15.png',
+                url: '../images/aboutus/photowall15.png',
                 title: 'On the way',
                 description: 'On the way'
             },
             {
                 id: 3,
-                url: './images/photowall16.png',
+                url: '../images/aboutus/photowall16.png',
                 title: 'On the way',
                 description: 'On the way'
             },
             {
                 id: 4,
-                url: './images/photowall17.png',
+                url: '../images/aboutus/photowall17.png',
                 title: 'On the way',
                 description: 'On the way'
             },
             {
                 id: 5,
-                url: './images/al-show.png',
+                url: '../images/aboutus/al-show.png',
                 title: 'On the way',
                 description: 'On the way'
             },
             {
                 id: 6,
-                url: './images/photowall19.png',
+                url: '../images/aboutus/photowall19.png',
                 title: 'On the way',
                 description: 'On the way'
             },
             {
                 id: 7,
-                url: './images/photowall15.png',
+                url: '../images/aboutus/photowall15.png',
                 title: 'On the way',
                 description: 'On the way'
             },
             {
                 id: 8,
-                url: './images/photowall8.png',
+                url: '../images/aboutus/photowall8.png',
                 title: 'On the way',
                 description: 'On the way'
             },
             {
                 id: 9,
-                url: './images/photowall9.png',
+                url: '../images/aboutus/photowall9.png',
                 title: 'On the way',
                 description: 'On the way'
             }],
@@ -697,8 +697,8 @@ $(function() {
             var context = this
             var index = context.getIndexFromHash()
             // 相册按钮 show
-            this.next_link = $('<div class="switch show-prev"><div class="cl_shadow"><img src="./images/icon_left.svg" alt=""></div></div>')
-            this.prev_link = $('<div class="switch show-next"><div class="cl_shadow"><img src="./images/icon_right.svg" alt=""></div></div>')
+            this.next_link = $('<div class="switch show-prev"><div class="cl_shadow"><img src="../images/aboutus/icon_left.svg" alt=""></div></div>')
+            this.prev_link = $('<div class="switch show-next"><div class="cl_shadow"><img src="../images/aboutus/icon_right.svg" alt=""></div></div>')
             this.s_show_album.append(this.next_link)
             this.s_show_album.append(this.prev_link)
             this.prev_link.add(this.next_link).click(function() {
@@ -725,8 +725,8 @@ $(function() {
         initBackAndForward: function() {
             var context = this
             // 相册按钮 carousel
-            this.c_prev_link = $('<div class="arrow_hover car-prev"><img src="./images/arrow_l.svg" alt=""></div>')
-            this.c_next_link = $('<div class="arrow_hover car-next"><img src="./images/arrow_r.svg" alt=""></div>')
+            this.c_prev_link = $('<div class="arrow_hover car-prev"><img src="../images/aboutus/arrow_l.svg" alt=""></div>')
+            this.c_next_link = $('<div class="arrow_hover car-next"><img src="../images/aboutus/arrow_r.svg" alt=""></div>')
             this.nav.prepend(this.c_prev_link)
             this.nav.append(this.c_next_link)
 

@@ -1,7 +1,7 @@
 .home-banner {
     position: relative;
     margin: 70px auto 0;
-    background: url('../images/banner-bg.png') no-repeat center 0;
+    background: url('../images/home/banner-bg.png') no-repeat center 0;
     border-radius: 20px 20px 0 0;
     text-align: center;
     width: 98%;
@@ -183,10 +183,10 @@
 
 .home-vision {
     margin-top: 154px;
-    background: url(../images/vision-bg.png) no-repeat center 365px;
+    background: url(../images/home/vision-bg.png) no-repeat center 365px;
 }
 .home-vision .container {
-    background: url(../images/vision-main.png) no-repeat center 1px;
+    background: url(../images/home/vision-main.png) no-repeat center 1px;
     padding-bottom: 211px;
 }
 .home-vision-head {
@@ -279,7 +279,7 @@
 .home-business-title::after {
     content: "";
     position: absolute;
-    background-image: url(../images/business-title.png);
+    background-image: url(../images/home/business-title.png);
     width: 108px;
     height: 40px;
     top: 13px;
@@ -449,7 +449,7 @@
         margin: 34px auto 0;
         width: 100%;
         flex-direction: column;
-        background: url(../images/vision-main-mob.png) no-repeat center 1px;
+        background: url(../images/home/vision-main-mob.png) no-repeat center 1px;
         background-size: cover;
         padding: 50px 0 46px;
     }

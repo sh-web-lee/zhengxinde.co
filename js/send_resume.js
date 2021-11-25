@@ -13,8 +13,8 @@ $(function() {
         email_reg: /^([a-zA-Z]|[0-9])(\w|\-)+@[a-zA-Z0-9]+\.([a-zA-Z]{2,4})$/,      //  邮箱判断
         close_popup_button: null,   //  关闭弹出框按钮
         popup_mask: false,  //  遮罩层
-        submit_success_img: './images/success.png',
-        submit_fail_img: './images/fail.png',
+        submit_success_img: '../images/recruitment/success.png',
+        submit_fail_img: '../images/recruitment/fail.png',
         img_container: false,
         popup_tips: null,   //  弹出框提示语句
         popup_success_tips: '提交成功',
@@ -100,7 +100,7 @@ $(function() {
             })
             this.popup_service_button.click(function() {
                 if (submit_status) 
-                    window.location.href = '/recruitment/recriut_detail.html'
+                    window.location.href = '../pages/recriut_detail.html'
                 context.removePopupContainer()
             })
         },

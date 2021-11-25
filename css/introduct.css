@@ -5,7 +5,7 @@
 .int-banner {
     /* min-height: 400px; */
     height: 42.3vh;
-    background: url(../images/int-banner-bg.png) no-repeat center center;
+    background: url(../images/aboutus/int-banner-bg.png) no-repeat center center;
     margin-top: 70px;
     overflow: hidden;
 }
@@ -21,7 +21,7 @@
 }
 .int-detail .container {
     width: 1400px;
-    background: url(../images/describe-bg.png) no-repeat center 105px;
+    background: url(../images/aboutus/describe-bg.png) no-repeat center 105px;
     overflow: hidden;
     padding: 147px 0 113px;
 }
@@ -43,12 +43,15 @@
 
 .int-detail .int-detail-milestone-word {
     display: flex;
-    width: 1059px;
+    width: 1280px;
     margin: 21.5px auto 0;
     justify-content: space-around;
     font: normal normal normal 16px/28px JiangChengYuanTi500;
     letter-spacing: 0px;
     color: #000;
+}
+.int-detail .int-detail-milestone-word li {
+    flex: 1;
 }
 .int-detail .int-detail-milestone dl {
     flex: 1;
@@ -79,7 +82,7 @@
 .sub-banner .container {
     width: 1400px;
     min-height: 280px;
-    background: url(../images/sub-banner-bg.png) no-repeat center center;
+    background: url(../images/aboutus/sub-banner-bg.png) no-repeat center center;
 }
 
 
@@ -87,7 +90,7 @@
     .int-detail .container {
         background-position: center 47px;
         padding: 70px 0 0;
-        background: url(../images/describe-bg-mob.svg) no-repeat center 428px;
+        background: url(../images/aboutus/describe-bg-mob.svg) no-repeat center 428px;
         background-size: 100%;
     }
     .int-detail .int-detail-title {

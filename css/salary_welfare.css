@@ -7,7 +7,7 @@
 .salary-banner {
     margin-top: 70px;
     padding-top: 108.5px;
-    background: url(../images/salary-banner-bg.svg) no-repeat -24px 264px;
+    background: url(../images/aboutus/salary-banner-bg.svg) no-repeat -24px 264px;
 }
 .salary-banner .container {
     width: 1064px;
@@ -177,7 +177,7 @@
     padding: 0 4vw;
 }
 .salary-welfare {
-    background: url(../images/welfare-bg.png) no-repeat 1px 1px;
+    background: url(../images/aboutus/welfare-bg.png) no-repeat 1px 1px;
     padding-top: 281px;
     margin-top: -183px;
 }

@@ -1,6 +1,6 @@
 .recriut-banner {
     height: 340px;
-    background: url(../images/banner-bg.png) no-repeat center 0px;
+    background: url(../images/recruitment/banner-bg.png) no-repeat center 0px;
     margin-top: 70px;
     overflow: hidden;
     border-bottom: 1px solid #e5e5e5;
@@ -164,6 +164,7 @@
 .recriut-post table tbody .post-name img {
     position: relative;
     top: 4px;
+    animation: skip-icon 1.8s ease infinite;
 }
 .recriut-post .recriut-post-pagenation {
     display: flex;

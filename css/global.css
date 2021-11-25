@@ -375,37 +375,37 @@ a {
 /* 字体文件 */
 @font-face {
     font-family: JiangChengYuanTiBold;
-    src: url(./Helvetica\ Rounded\ LT\ Bold.ttf);
+    src: url(./font/Helvetica\ Rounded\ LT\ Bold.ttf);
 }
 @font-face {
     font-family: JiangChengYuanTiBlack;
-    src: url(./Helvetica\ Rounded\ LT\ Black.ttf);
+    src: url(./font/Helvetica\ Rounded\ LT\ Black.ttf);
 }
 @font-face {
     font-family: JiangChengYuanTiBoldOblique;
-    src: url(./Helvetica\ Rounded\ LT\ Bold\ Oblique.ttf);
+    src: url(./font/Helvetica\ Rounded\ LT\ Bold\ Oblique.ttf);
 }
 @font-face {
     font-family: JiangChengYuanTi200;
-    src: url(./JiangChengYuanTi\ 200W.ttf);
+    src: url(./font/JiangChengYuanTi\ 200W.ttf);
 }
 @font-face {
     font-family: JiangChengYuanTi300;
-    src: url(./JiangChengYuanTi\ 300W.ttf);
+    src: url(./font/JiangChengYuanTi\ 300W.ttf);
 }
 @font-face {
     font-family: JiangChengYuanTi400;
-    src: url(./JiangChengYuanTi\ 400W.ttf);
+    src: url(./font/JiangChengYuanTi\ 400W.ttf);
 }
 @font-face {
     font-family: JiangChengYuanTi500;
-    src: url(./JiangChengYuanTi\ 500W.ttf);
+    src: url(./font/JiangChengYuanTi\ 500W.ttf);
 }
 @font-face {
     font-family: JiangChengYuanTi600;
-    src: url(./JiangChengYuanTi\ 600W.ttf);
+    src: url(./font/JiangChengYuanTi\ 600W.ttf);
 }
 @font-face {
     font-family: JiangChengYuanTi700;
-    src: url(./JiangChengYuanTi\ 700W.ttf);
+    src: url(./font/JiangChengYuanTi\ 700W.ttf);
 }

@@ -1,7 +1,7 @@
 .al-main {
     margin-top: 70px;
     padding: 50px 0 68px;
-    background: url('../images/album-bg.png') center center no-repeat;
+    background: url('../images/aboutus/album-bg.png') center center no-repeat;
     background-size: cover;
 }
 .al-main .container {
@@ -73,7 +73,7 @@
     text-indent: 16px;
     font: normal normal normal 18px/37px JiangChengYuanTi500;
     color: #333333;
-    background: url('../images/opa75.png');
+    background: url('../images/aboutus/opa75.png');
 }
 
 
@@ -110,7 +110,7 @@
     font: normal normal normal 18px/50px JiangChengYuanTi500;
     text-indent: 28px;
     color: #000;
-    background: url('../images/opa75.png');
+    background: url('../images/aboutus/opa75.png');
 }
 .al-photo .al-right-photo .show .p-shadow {
     position: absolute;
@@ -157,7 +157,6 @@
     width: 48px;
     height: 48px;
     border-radius: 50%;
-    /* background: url('../images/opa75.png'); */
     background-color: rgba(0, 0, 0, 0.36);
 }
 .al-photo .al-right-photo .show .switch img {
