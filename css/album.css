@@ -51,7 +51,7 @@
     cursor: pointer;
 }
 .al-photo .al-left-photo .al-left-item:hover {
-    transform: translateY(-6px);
+    transform: translateY(-3px);
     animation: flash-bg .2s linear;
     box-shadow: 0px 5px 25px #00000038;
 }

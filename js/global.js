@@ -68,5 +68,6 @@ $(function() {
             })
         }
     }
-    $.fn.global()
+    new BindNav()
+    // $.fn.global()
 })

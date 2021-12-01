@@ -1,7 +1,7 @@
 $(function() {
     $.fn.album = function(options) {
         var defaults = {
-            loader_image: './images/loader.gif',
+            loader_image: '../images/aboutus/loader.gif',
             url: null,  //  url
             start_at_index: 0,
             update_window_hash: true,
@@ -837,7 +837,6 @@ $(function() {
             return desc
         },
         showImage: function(index, callback) {
-            console.log(this.current_index, index)
             var context = this
             if (this.images[index] && !this.in_transition && index != this.current_index) {
                 var image = this.images[index]
