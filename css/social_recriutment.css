@@ -147,6 +147,7 @@
     color: #FF6E5A;
     margin: 0 auto;
     box-sizing: border-box;
+    transition: all .3s;
 }
 .recriut-post table tbody tr td a:hover {
     background-color: #FF6E5A;
@@ -168,22 +169,31 @@
     top: 4px;
     animation: skip-icon 1.8s ease infinite;
 }
-.recriut-post .recriut-post-pagenation {
+.recriut-post .recriut-post-pagination {
     display: flex;
     margin-top: 36px;
     justify-content: center;
 }
-.recriut-post .recriut-post-pagenation .prevbtn, .nextbtn {
+.recriut-post .recriut-post-pagination li {
+    margin-left: 12px;
+}
+.recriut-post .recriut-post-pagination li:nth-child(1) {
+    margin: 0;
+}
+.recriut-post .recriut-post-pagination .button {
     width: 48px;
     height: 32px;
     background: #FFFFFF 0% 0% no-repeat padding-box;
     border: 1px solid #E0E0E0;
     border-radius: 5px;
+    display: block;
     align-items: center;
     display: flex;
     justify-content: center;
+
 }
-.recriut-post .recriut-post-pagenation .pages {
+.recriut-post .recriut-post-pagination .pages {
+    display: block;
     width: 32px;
     height: 32px;
     background: #FFFFFF 0% 0% no-repeat padding-box;
@@ -193,7 +203,10 @@
     letter-spacing: 0px;
     color: #333333;
     text-align: center;
-    margin: 0 12px;
+    /* margin-left: 12px; */
+}
+.recriut-post .recriut-post-pagination li .active {
+    background-color: #e5e5e5;
 }
 .post-list-false {
     padding: 241px 0 292px;
