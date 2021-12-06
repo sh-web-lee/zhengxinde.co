@@ -77,6 +77,8 @@
     padding: 14px 35px 11px;
     border: 0;
     outline: none;
+    cursor: pointer;
+    transition: all .3s;
 }
 .recriut-post .recriut-post-search .recriut-post-search-box .btn-post-search:hover {
     background: #0E62E2 0% 0% no-repeat padding-box;
