@@ -26,6 +26,7 @@ $(function() {
             this.createElements()
             this.uploadResumeFile()
             this.submit_Resume()
+            this.initPostName()
         },
         createElements: function() {
             this.close_popup_button = $('.close_mask')
@@ -108,6 +109,30 @@ $(function() {
         removePopupContainer: function() {
             this.img_container.children().remove()
             this.popup_mask.removeClass('mask_active')
+        },
+        // 初始化职位信息
+        initPostName: function() {
+            var data = this.getItem('post')
+            if (data) {
+                var str = '<div class="submit-resume-content-post-name-p1">'
+                        + '<span><label for="">发布时间 : </label><i class="submit-resume-release-time">' + data.release_time + '</i></span>'
+                        + '<a href="./social_recriutment.html" class="return-post-list">返回职位列表</a>'
+                        + '</div>'
+                        + '<div class="submit-resume-content-post-name-p2"><label for="">岗位名称 : </label>'
+                        + '<span class="post-name">' + data.post_name + '</span></div>'
+                        + '<div class="submit-resume-content-post-name-p3"><dl><dt>工作地点：</dt>'
+                        + '<dd>' + data.place + '</dd>'
+                        + '</dl><dl><dt>岗位类别：</dt>'
+                        + '<dd>' + data.post_type + '</dd>'
+                        + '</dl><dl><dt>招聘人数：</dt>'
+                        + '<dd>' + data.demand_num + '人</dd>'
+                        + '</dl></div>'
+                $('.submit-resume-content-post-name').html(str)
+            }
+        },
+        // 
+        getItem: function(key) {
+            return JSON.parse(window.decodeURIComponent(window.atob(localStorage.getItem(key))))
         }
     }
     $.fn.resume()

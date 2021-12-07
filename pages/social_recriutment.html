@@ -4,10 +4,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>招聘页面</title>
+    <title>招聘</title>
     <link rel="stylesheet" href="../css/social_recriutment.css">
     <link rel="stylesheet" href="../css/animate.css">
     <link rel="stylesheet" href="../css/global.css">
+    <script src="../js/jquery-1.11.3.min.js"></script>
+    <script src="../js/global.js"></script>
+    <script src="../js/recriutment.js"></script>
 </head>
 <body>
     <div class="box">
@@ -108,7 +111,7 @@
                         <li><a href="javascript:void(0);" class="pages">3</a></li>
                     </ul>
                 </div>
-                <div class="post-list-false">
+                <div class="post-list-false" style="display: none;">
                     <p>暂无你查找的职位，<a href="./social_recriutment.html">返回职位列表</a></p>
                 </div>
             </div>
@@ -155,22 +158,13 @@
     </div>
 </body>
 </html>
-<script src="../js/jquery-1.11.3.min.js"></script>
-<script src="../js/global.js"></script>
-<script>
-    $('.recriut-nav li').click(function() {
-        $(this).css({ 'background': '#F9B806', 'color': '#fff' })
-        $(this).siblings().css({ 'background': '#fff', 'color': '#000' })
-    })
-</script>
 <script data-state="test">
-    var randnum = Math.random()
-    if (randnum > 0 && randnum < 0.5) {
-        $('.post-list-true').show()
-        $('.post-list-false').hide()
-    } else {
-        $('.post-list-true').hide()
-        $('.post-list-false').show()
-    }
+    // var randnum = Math.random()
+    // if (randnum > 0 && randnum < 0.5) {
+    //     $('.post-list-true').show()
+    //     $('.post-list-false').hide()
+    // } else {
+    //     $('.post-list-true').hide()
+    //     $('.post-list-false').show()
+    // }
 </script>
-<script src="../js/recriutment.js"></script>

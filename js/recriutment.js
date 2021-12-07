@@ -12,7 +12,9 @@ $(function() {
         pagination_next: null, //   分页器 向后翻页
         current_index: 1,   //  分页器页码索引
         pages: 3,   //  三页
+        post_category: null,    //  分类
 
+        // 虚拟职位数据
         virtual_post: [
             {
                 id: 1,
@@ -20,15 +22,45 @@ $(function() {
                 post_type: '技术研发类',
                 demand_num: 8,
                 release_time: '2021-12-06',
-                isHot: true
+                place: '成都',
+                isHot: true,
+                post_duty: [
+                    '热爱前端行业，喜欢折腾新东西，对新鲜事物充满好奇；',
+                    '良好的编程能力。逻辑思维能力强，懂得如何编写简洁易读的代码；',
+                    '过硬的专业知识。js或（ts）、html、css、网络协议、浏览器API、前端框架（React、Vue、Angular任意）、工具链（label、webpack）等方面有一定知识储备；',
+                    '一年以上工作经验。有tob工作经历加分；',
+                    '热情有活力，开放的心态，主动作为，有责任感，自省自驱，追求极致的用户体验；',
+                    '其他上级临时分配的工作。'
+                ],
+                post_demand: [
+                    '大专及以上学历；',
+                    '有行政相关工作经验者优先，熟练使用OFFICE等办公软件，熟悉日常办公设备的操作；',
+                    '良好的职业心态和职业素养，较好的服务意识、沟通表达能力、组织协调能力等；',
+                    '工作仔细认真、责任心强、为人正直诚信，充满正能量。'
+                ]
             },
             {
                 id: 2,
                 post_name: '行政专员',
                 post_type: '职能管理类',
                 demand_num: 8,
+                place: '成都',
                 release_time: '2021-12-06',
-                isHot: true
+                isHot: true,
+                post_duty: [
+                    '日常前台接待和登记，日常办公室环境维护；',
+                    '日常行政用品和公司其他所需物资、设备的采购、发放和登记管理；',
+                    '行政支出费用结算、制作报表、并完成财务报销；',
+                    '每月公司员工考勤、加班统计；',
+                    '策划和组织公司各项定期和不定期集体活动；',
+                    '其他上级临时分配的工作。'
+                ],
+                post_demand: [
+                    '大专及以上学历；',
+                    '有行政相关工作经验者优先，熟练使用OFFICE等办公软件，熟悉日常办公设备的操作；',
+                    '良好的职业心态和职业素养，较好的服务意识、沟通表达能力、组织协调能力等；',
+                    '工作仔细认真、责任心强、为人正直诚信，充满正能量。'
+                ]
             },
             {
                 id: 3,
@@ -36,6 +68,7 @@ $(function() {
                 post_type: '市场营销类',
                 demand_num: 8,
                 release_time: '2021-12-06',
+                place: '成都',
                 isHot: false
             },
             {
@@ -44,6 +77,7 @@ $(function() {
                 post_type: '技术研发类',
                 demand_num: 8,
                 release_time: '2021-12-06',
+                place: '成都',
                 isHot: false
             },
             {
@@ -52,6 +86,7 @@ $(function() {
                 post_type: '市场营销类',
                 demand_num: 8,
                 release_time: '2021-12-06',
+                place: '成都',
                 isHot: false
             },
             {
@@ -60,6 +95,7 @@ $(function() {
                 post_type: '市场营销类',
                 demand_num: 8,
                 release_time: '2021-12-06',
+                place: '成都',
                 isHot: true
             },
             {
@@ -68,6 +104,7 @@ $(function() {
                 post_type: '市场营销类',
                 demand_num: 8,
                 release_time: '2021-12-06',
+                place: '成都',
                 isHot: false
             },
             {
@@ -76,7 +113,22 @@ $(function() {
                 post_type: '职能管理类',
                 demand_num: 8,
                 release_time: '2021-12-06',
-                isHot: true
+                place: '成都',
+                isHot: true,
+                post_duty: [
+                    '日常前台接待和登记，日常办公室环境维护；',
+                    '日常行政用品和公司其他所需物资、设备的采购、发放和登记管理；',
+                    '行政支出费用结算、制作报表、并完成财务报销；',
+                    '每月公司员工考勤、加班统计；',
+                    '策划和组织公司各项定期和不定期集体活动；',
+                    '其他上级临时分配的工作。'
+                ],
+                post_demand: [
+                    '大专及以上学历；',
+                    '有行政相关工作经验者优先，熟练使用OFFICE等办公软件，熟悉日常办公设备的操作；',
+                    '良好的职业心态和职业素养，较好的服务意识、沟通表达能力、组织协调能力等；',
+                    '工作仔细认真、责任心强、为人正直诚信，充满正能量。'
+                ]
             },
             {
                 id: 9,
@@ -84,6 +136,7 @@ $(function() {
                 post_type: '技术开发类',
                 demand_num: 8,
                 release_time: '2021-12-06',
+                place: '成都',
                 isHot: false
             },
             {
@@ -92,21 +145,22 @@ $(function() {
                 post_type: '市场营销类',
                 demand_num: 8,
                 release_time: '2021-12-06',
+                place: '成都',
                 isHot: false
             }
         ],
         init: function() {
             this.initElement()
             this.initPostList()
-            this.addHotImg()
             this.initPagination()
             this.initActivePages()
-            this.selectPages()
+            this.selectPostCategory()
         },
         initElement: function() {
             this.post_name = $('.post-name')
             this.pagination_pages = $('.pages')
             this.pagination_container = $('.recriut-post-pagination')
+            this.post_category = $('.recriut-nav li')
         },
         // 热门职位
         addHotImg: function() {
@@ -118,15 +172,17 @@ $(function() {
         initPostList: function() {
             var str = ''
             $(this.virtual_post).each(function(index, item) {
-                var hot = item.isHot ? 'hot' : ''
+                var hot = item.isHot ? ' hot' : ''
                 str += '<tr>'
-                    + '<td><div class="post-name ' + hot + '"><span>' + item.post_name + '</span></div></td>'
+                    + '<td><div class="post-name' + hot + '"><span>' + item.post_name + '</span></div></td>'
                     + '<td>' + item.post_type + '</td>'
                     + '<td>' + item.demand_num + '人</td><td>' + item.release_time + '</td>'
-                    + '<td><a href="./recriut_detail.html">立即申请</a></td>'
-                    +'</tr>'
+                    + '<td><a href="javascript:void(0);" class="aplly_now" data-id="' + index + '">立即申请</a></td>'
+                    + '</tr>'
             })
             $('.tablebody').html(str)
+            this.addHotImg()
+            this.requestPost()
         },
         // 分页器
         initPagination: function() {
@@ -145,7 +201,7 @@ $(function() {
                 }
                 context.pagination_pages.eq(context.current_index - 1).addClass('active').parent().siblings().children().removeClass('active')
             })
-            
+            this.selectPages()
         },
         // 初始化页码，默认第一页
         initActivePages: function() {
@@ -163,6 +219,33 @@ $(function() {
                 $(this).addClass('active').parent().siblings().children().removeClass('active')
                 context.current_index = Number($(this).text())
             })
+        },
+        // 切换社会招聘分类
+        selectPostCategory: function() {
+            this.post_category.on('click', function() {
+                $(this).css({ 'background': '#F9B806', 'color': '#fff' }).siblings().css({ 'background': '#fff', 'color': '#000' })
+            })
+        },
+        // 立即申请 存储职位信息，跳转职位详情页面
+        requestPost: function() {
+            var context = this
+            var aplly_btn = $('.aplly_now') //  立即申请按钮
+            aplly_btn.click(function() {
+                var id = $(this).attr('data-id')
+                context.removeItem('post')
+                context.setItem('post', JSON.stringify(context.virtual_post[id]))
+                window.location.href = './recriut_detail.html'
+            })
+        },
+        // 本地存储
+        setItem: function(key, value) {
+            if (key && value) {
+                localStorage.setItem(key, window.btoa(window.encodeURIComponent(value)))
+            }
+        },
+        // 移除本地存储
+        removeItem: function(key) {
+            localStorage.removeItem(key)
         }
     }
 
