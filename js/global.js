@@ -45,7 +45,7 @@ $(function() {
                     context.addMask(context.maskSwitch)
                 } else {
                     parent.addClass('active')
-                    context.maskSwitch = true
+                    context.maskSwitch = !context.maskSwitch
                     context.addMask(context.maskSwitch)
                 }
             })

@@ -200,6 +200,8 @@ $(function() {
                     context.current_index === context.pages ? context.current_index = 3 : context.current_index++
                 }
                 context.pagination_pages.eq(context.current_index - 1).addClass('active').parent().siblings().children().removeClass('active')
+                var _index = context.current_index
+                context.stopTurnPages(_index)
             })
             this.selectPages()
         },
@@ -209,6 +211,8 @@ $(function() {
             this.pagination_pages.each(function(index, item) {
                 if (context.current_index === index + 1) {
                     $(item).addClass('active')
+                    var _index = context.current_index
+                    context.stopTurnPages(_index)
                 }
             })
         },
@@ -218,6 +222,8 @@ $(function() {
             this.pagination_pages.click(function() {
                 $(this).addClass('active').parent().siblings().children().removeClass('active')
                 context.current_index = Number($(this).text())
+                var _index = context.current_index
+                context.stopTurnPages(_index)
             })
         },
         // 切换社会招聘分类
@@ -226,25 +232,38 @@ $(function() {
                 $(this).css({ 'background': '#F9B806', 'color': '#fff' }).siblings().css({ 'background': '#fff', 'color': '#000' })
             })
         },
+        // 页码位于第一页或者最后一页，翻页按钮禁止点击
+        stopTurnPages: function(_index) {
+            console.log(_index)
+            if (_index === 1) {
+                this.pagination_prev.children().css('cursor', 'not-allowed')
+                this.pagination_next.children().css('cursor', 'pointer')
+            } else if (_index === 3) {
+                this.pagination_next.children().css('cursor', 'not-allowed')
+                this.pagination_prev.children().css('cursor', 'pointer')
+            } else {
+                this.pagination_prev.children().add(this.pagination_next.children()).css('cursor', 'pointer')
+            }
+        },
         // 立即申请 存储职位信息，跳转职位详情页面
         requestPost: function() {
             var context = this
             var aplly_btn = $('.aplly_now') //  立即申请按钮
             aplly_btn.click(function() {
                 var id = $(this).attr('data-id')
-                context.removeItem('post')
-                context.setItem('post', JSON.stringify(context.virtual_post[id]))
+                context.removeStorage('post')
+                context.setStorage('post', JSON.stringify(context.virtual_post[id]))
                 window.location.href = './recriut_detail.html'
             })
         },
         // 本地存储
-        setItem: function(key, value) {
+        setStorage: function(key, value) {
             if (key && value) {
                 localStorage.setItem(key, window.btoa(window.encodeURIComponent(value)))
             }
         },
         // 移除本地存储
-        removeItem: function(key) {
+        removeStorage: function(key) {
             localStorage.removeItem(key)
         }
     }

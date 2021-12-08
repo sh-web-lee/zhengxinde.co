@@ -2,7 +2,7 @@ var postData = false
 
 $(function() {
     // 获取职位信息，初始化页面
-    postData = getItem('post')
+    postData = getStorage('post')
     if (postData) {
         initPostName()
         initPostDuty()
@@ -10,7 +10,7 @@ $(function() {
     }
 })
 // 获取本地存储
-function getItem(key) {
+function getStorage(key) {
     return JSON.parse(window.decodeURIComponent(window.atob(localStorage.getItem(key))))
 }
 // 
