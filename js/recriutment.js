@@ -13,6 +13,7 @@ $(function() {
         current_index: 1,   //  分页器页码索引
         pages: 3,   //  三页
         post_category: null,    //  分类
+        result: null,
 
         // 虚拟职位数据
         virtual_post: [
@@ -151,10 +152,11 @@ $(function() {
         ],
         init: function() {
             this.initElement()
-            this.initPostList()
+            // this.initPostList()
             this.initPagination()
             this.initActivePages()
             this.selectPostCategory()
+            this.getPostAjax()
         },
         initElement: function() {
             this.post_name = $('.post-name')
@@ -169,11 +171,13 @@ $(function() {
             this.hot_post.prepend(img)
         },
         // 初始化职位列表 表格
-        initPostList: function() {
+        initPostList: function(res) {
+            var list = ''
+            list = res ? res : this.virtual_post
             var str = ''
             // 判断是否有职位，如果有则初始化职位列表渲染页面；如果没有，则展示空页面
-            if (this.virtual_post.length > 0) {
-                $(this.virtual_post).each(function(index, item) {
+            if (list.length > 0) {
+                $(list).each(function(index, item) {
                     var hot = item.isHot ? ' hot' : ''
                     str += '<tr>'
                         + '<td><div class="post-name' + hot + '"><span>' + item.post_name + '</span></div></td>'
@@ -270,7 +274,20 @@ $(function() {
         // 移除本地存储
         removeStorage: function(key) {
             localStorage.removeItem(key)
+        },
+        // 异步请求 ajax 职位列表
+        getPostAjax: function() {
+            var context = this
+            $.ajax({
+                url: 'https://v1.hitokoto.cn/?c=i',
+                type: 'GET',
+                success: function(res) {
+                    context.initPostList(res)
+                }
+            })
+
         }
+
     }
 
     new Recriut()

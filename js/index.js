@@ -216,7 +216,6 @@ $(function() {
             str += '<a href="./pages/social_recriutment.html" class="more-position">更多</a>'
             $('#hot-post-list').html(str)
         }
-
     }
     $.fn.legend()
 })
