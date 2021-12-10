@@ -172,12 +172,10 @@ $(function() {
         },
         // 初始化职位列表 表格
         initPostList: function(res) {
-            var list = ''
-            list = res ? res : this.virtual_post
             var str = ''
             // 判断是否有职位，如果有则初始化职位列表渲染页面；如果没有，则展示空页面
-            if (list.length > 0) {
-                $(list).each(function(index, item) {
+            if (res.length > 0) {
+                $(res).each(function(index, item) {
                     var hot = item.isHot ? ' hot' : ''
                     str += '<tr>'
                         + '<td><div class="post-name' + hot + '"><span>' + item.post_name + '</span></div></td>'
@@ -279,10 +277,17 @@ $(function() {
         getPostAjax: function() {
             var context = this
             $.ajax({
-                url: 'https://v1.hitokoto.cn/?c=i',
+                url: '',
                 type: 'GET',
                 success: function(res) {
-                    context.initPostList(res)
+                    if (res.length > 0) {
+                        context.initPostList(res)
+                    } else {
+                        context.initPostList(context.virtual_post)
+                    }
+                },
+                error: function(err) {
+                    console.log(err)
                 }
             })
 
