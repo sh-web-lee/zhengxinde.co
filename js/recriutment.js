@@ -280,7 +280,7 @@ $(function() {
                 url: '',
                 type: 'GET',
                 success: function(res) {
-                    if (res.length > 0) {
+                    if (res.code == 200) {
                         context.initPostList(res)
                     } else {
                         context.initPostList(context.virtual_post)
