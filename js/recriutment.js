@@ -171,18 +171,24 @@ $(function() {
         // 初始化职位列表 表格
         initPostList: function() {
             var str = ''
-            $(this.virtual_post).each(function(index, item) {
-                var hot = item.isHot ? ' hot' : ''
-                str += '<tr>'
-                    + '<td><div class="post-name' + hot + '"><span>' + item.post_name + '</span></div></td>'
-                    + '<td>' + item.post_type + '</td>'
-                    + '<td>' + item.demand_num + '人</td><td>' + item.release_time + '</td>'
-                    + '<td><a href="javascript:void(0);" class="aplly_now" data-id="' + index + '">立即申请</a></td>'
-                    + '</tr>'
-            })
-            $('.tablebody').html(str)
-            this.addHotImg()
-            this.requestPost()
+            // 判断是否有职位，如果有则初始化职位列表渲染页面；如果没有，则展示空页面
+            if (this.virtual_post.length > 0) {
+                $(this.virtual_post).each(function(index, item) {
+                    var hot = item.isHot ? ' hot' : ''
+                    str += '<tr>'
+                        + '<td><div class="post-name' + hot + '"><span>' + item.post_name + '</span></div></td>'
+                        + '<td>' + item.post_type + '</td>'
+                        + '<td>' + item.demand_num + '人</td><td>' + item.release_time + '</td>'
+                        + '<td><a href="javascript:void(0);" class="aplly_now" data-id="' + index + '">立即申请</a></td>'
+                        + '</tr>'
+                })
+                $('.tablebody').html(str)
+                this.addHotImg()
+                this.requestPost()
+            } else {
+                $('.post-list-true').css('display', 'none')
+                $('.post-list-false').css('display', 'block')
+            }
         },
         // 分页器
         initPagination: function() {
@@ -233,8 +239,7 @@ $(function() {
             })
         },
         // 页码位于第一页或者最后一页，翻页按钮禁止点击
-        stopTurnPages: function(_index) {
-            console.log(_index)
+        stopTurnPages: function(_index, link) {
             if (_index === 1) {
                 this.pagination_prev.children().css('cursor', 'not-allowed')
                 this.pagination_next.children().css('cursor', 'pointer')
