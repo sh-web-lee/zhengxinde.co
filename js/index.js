@@ -152,7 +152,6 @@ $(function() {
         init: function() {
             this.createElements()
             this.carousel()
-            // carouselTimer = setInterval(() => { this.carousel() }, this.animation_speed);
             this.addBorder()
             this.scrollPage()
             this.getHotPost()
